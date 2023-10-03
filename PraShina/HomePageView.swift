@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomePageView: View {
     var body: some View {
         ZStack{
             Color.black
@@ -144,5 +144,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    HomePageView()
 }
