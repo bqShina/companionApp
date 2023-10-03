@@ -12,7 +12,6 @@
 		0BBDD4572ACA33480000A250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDD4562ACA33480000A250 /* Assets.xcassets */; };
 		0BBDD45A2ACA33480000A250 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDD4592ACA33480000A250 /* Preview Assets.xcassets */; };
 		0BBDD4612ACA65870000A250 /* OnGoingTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4602ACA65870000A250 /* OnGoingTaskView.swift */; };
-		0BBDD4632ACA6C0C0000A250 /* SnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4622ACA6C0C0000A250 /* SnowView.swift */; };
 		0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4642ACBAC760000A250 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +22,6 @@
 		0BBDD4562ACA33480000A250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BBDD4592ACA33480000A250 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BBDD4602ACA65870000A250 /* OnGoingTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGoingTaskView.swift; sourceTree = "<group>"; };
-		0BBDD4622ACA6C0C0000A250 /* SnowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowView.swift; sourceTree = "<group>"; };
 		0BBDD4642ACBAC760000A250 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +57,6 @@
 			children = (
 				0BBDD4522ACA33470000A250 /* PraShinaApp.swift */,
 				0BBDD4602ACA65870000A250 /* OnGoingTaskView.swift */,
-				0BBDD4622ACA6C0C0000A250 /* SnowView.swift */,
 				0BBDD4542ACA33470000A250 /* ContentView.swift */,
 				0BBDD4642ACBAC760000A250 /* SettingView.swift */,
 				0BBDD4562ACA33480000A250 /* Assets.xcassets */,
@@ -150,7 +147,6 @@
 				0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */,
 				0BBDD4552ACA33470000A250 /* ContentView.swift in Sources */,
 				0BBDD4532ACA33470000A250 /* PraShinaApp.swift in Sources */,
-				0BBDD4632ACA6C0C0000A250 /* SnowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

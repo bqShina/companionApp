@@ -67,11 +67,7 @@ struct ContentView: View {
                             }
 
                         }
-                    VStack{
-
-                        Text("Setting")
-                        
-                    }
+                    SettingView()
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color.black)
