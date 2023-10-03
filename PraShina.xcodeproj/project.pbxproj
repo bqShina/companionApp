@@ -13,6 +13,8 @@
 		0BBDD45A2ACA33480000A250 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDD4592ACA33480000A250 /* Preview Assets.xcassets */; };
 		0BBDD4612ACA65870000A250 /* OnGoingTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4602ACA65870000A250 /* OnGoingTaskView.swift */; };
 		0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4642ACBAC760000A250 /* SettingView.swift */; };
+		D569AA802ACCDBE4006961B9 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */; };
+		D569AA822ACCDC14006961B9 /* ChooseYourCompanionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		0BBDD4592ACA33480000A250 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BBDD4602ACA65870000A250 /* OnGoingTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGoingTaskView.swift; sourceTree = "<group>"; };
 		0BBDD4642ACBAC760000A250 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseYourCompanionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				0BBDD4602ACA65870000A250 /* OnGoingTaskView.swift */,
 				0BBDD4542ACA33470000A250 /* ContentView.swift */,
 				0BBDD4642ACBAC760000A250 /* SettingView.swift */,
+				D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */,
+				D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */,
 				0BBDD4562ACA33480000A250 /* Assets.xcassets */,
 				0BBDD4582ACA33480000A250 /* Preview Content */,
 			);
@@ -147,6 +153,8 @@
 				0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */,
 				0BBDD4552ACA33470000A250 /* ContentView.swift in Sources */,
 				0BBDD4532ACA33470000A250 /* PraShinaApp.swift in Sources */,
+				D569AA802ACCDBE4006961B9 /* HomePageView.swift in Sources */,
+				D569AA822ACCDC14006961B9 /* ChooseYourCompanionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

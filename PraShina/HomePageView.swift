@@ -92,7 +92,7 @@ struct HomePageView: View {
                     
                 }
                 label: {
-                    Text("Style Me!")
+                    Text("Customize")
                         .padding(.horizontal, 80)
                         .padding(.vertical, 15)
                         .font(.system(size:24, weight: .bold))
