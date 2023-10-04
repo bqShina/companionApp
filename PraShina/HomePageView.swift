@@ -113,32 +113,12 @@ struct HomePageView: View {
                         startPoint: .init(x: -0.33, y: -0.33),
                         endPoint: .init(x: 0.66, y: 0.66)
                     ))
-                .clipShape(RoundedRectangle(cornerRadius: 15))
+                .clipShape(RoundedRectangle(cornerRadius: 30))
                 .buttonStyle(PlainButtonStyle())
             }
             .frame(height: 100)
             .offset(y:-45)
-            
-            
-//            ZStack{
-//                Button(){
-//                    
-//                }
-//                label: {
-//                    Label("Customize", systemImage:"pencil.circle")
-//                        .padding(.horizontal, 80)
-//                        .padding(.vertical, 15)
-//                        .font(.system(size:24, weight:.bold))
-//                        .foregroundColor(colorScheme == .dark ? Color.clear : Color.black)
-//                        .background(.gray)
-//                        .cornerRadius(40)
-//                        
-//                }
-//                .offset(y:-45)
-//            }
-            
-            
-            
+
         }
     }
 }

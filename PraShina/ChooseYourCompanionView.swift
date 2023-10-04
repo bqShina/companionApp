@@ -8,58 +8,63 @@
 import SwiftUI
 
 struct ChooseYourCompanionView: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
-        ZStack{
-            Color.black
-                .edgesIgnoringSafeArea(.all)
-            VStack{
-                HStack{
+        
+        VStack{
+            HStack{
+                Button{
+                    
+                }
+                label: {
                     Image(systemName: "arrowshape.turn.up.backward")
                         .dynamicTypeSize(.xxxLarge)
-                        .foregroundColor(.white)
+                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                         .offset(x:-10, y:20)
-                    Text("Choose Your Companion!")
-                        .font(.system(size:24, weight: .bold))
-                        .foregroundColor(.white)
-                        .offset(y:20)
                 }
                 
-                ScrollView(.vertical){
-                    Button{
-                        
-                    }
-                    label: {
-                        Image("dinoCYC")
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundStyle(.tint)
-                            .offset(y:40)
-                    }
+                Text("Choose Your Companion!")
+                    .font(.system(size:24, weight: .bold))
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    .offset(y:20)
+            }
+            
+            ScrollView(.vertical){
+                Button{
                     
-                    Button{
-                        
-                    }
-                    label: {
-                        Image("dogCYC")
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundStyle(.tint)
-                            .offset(y:40)
-                    }
+                }
+                label: {
+                    Image("dinoCYC")
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundStyle(.tint)
+                        .offset(y:40)
+                }
+                
+                Button{
                     
-                    Button{
-                        
-                    }
-                    label: {
-                        Image("uniCYC")
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundStyle(.tint)
-                            .offset(y:-20)
-                    }
+                }
+                label: {
+                    Image("dogCYC")
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundStyle(.tint)
+                        .offset(y:40)
+                }
+                
+                Button{
                     
-                    
+                }
+                label: {
+                    Image("uniCYC")
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundStyle(.tint)
+                        .offset(y:-20)
                 }
                 
                 
             }
+                
+            
         }
     }
 }
