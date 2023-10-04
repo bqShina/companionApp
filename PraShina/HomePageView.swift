@@ -87,22 +87,58 @@ struct HomePageView: View {
                     
                 
     //        Customization box
-            
-            Button(){
-                
+            ZStack{
+                LinearGradient(
+                    gradient: .init(colors: [Color.white, Color.blue.opacity(0.66)]),
+                    startPoint: .init(x: 0.0, y: 0.0),
+                    endPoint: .init(x: 0.75, y: 0.75)
+                )
+                .mask(
+                    RoundedRectangle(cornerRadius: 15)
+                        .frame(width: 120, height: 45, alignment: .center)
+                        .blur(radius: 10)
+                )
+                .padding(.top, 20)
+                Button(action: {}, label: {
+                    Label("Customize", systemImage:"pencil.circle")
+                        .padding(.horizontal, 80)
+                        .padding(.vertical, 15)
+                        .font(.system(size:24, weight:.bold))
+                        .cornerRadius(40)
+                })
+                .foregroundColor(.white)
+                .background(
+                    LinearGradient(
+                        gradient: .init(colors: [Color.white, Color.blue.opacity(0.75)]),
+                        startPoint: .init(x: -0.33, y: -0.33),
+                        endPoint: .init(x: 0.66, y: 0.66)
+                    ))
+                .clipShape(RoundedRectangle(cornerRadius: 15))
+                .buttonStyle(PlainButtonStyle())
             }
-            label: {
-                Label("Customize", systemImage:"pencil.circle")
-                    .padding(.horizontal, 80)
-                    .padding(.vertical, 15)
-                    .font(.system(size:24, weight:.bold))
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                    .background(.gray)
-                    .cornerRadius(40)
-                    
-            }
+            .frame(height: 100)
             .offset(y:-45)
-                
+            
+            
+//            ZStack{
+//                Button(){
+//                    
+//                }
+//                label: {
+//                    Label("Customize", systemImage:"pencil.circle")
+//                        .padding(.horizontal, 80)
+//                        .padding(.vertical, 15)
+//                        .font(.system(size:24, weight:.bold))
+//                        .foregroundColor(colorScheme == .dark ? Color.clear : Color.black)
+//                        .background(.gray)
+//                        .cornerRadius(40)
+//                        
+//                }
+//                .offset(y:-45)
+//            }
+            
+            
+            
         }
     }
 }
