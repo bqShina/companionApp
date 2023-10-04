@@ -8,40 +8,42 @@
 import SwiftUI
 
 struct OnGoingTaskView: View {
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         VStack {
+            Text("Companion")
+                .font(.system(size: 30))
+                .fontWeight(.heavy)
+                .offset(y:-50)
+            
             Image("dog")
             
-            VStack(spacing: 40) {
-                Text("Go for a brisk 25 minute jog.")
+            ZStack{
+                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                    .frame(width:331, height:201)
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    .opacity(0.2)
+                
+                Text("Sing and dance to a song 🎶")
                     .font(.system(size: 24))
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
-
-                HStack(spacing: 40) {
-                    Button {
-                        
-                    } label: {
-                        Label("", systemImage: "multiply.circle")
-                            .font(.system(size: 24))
-                    }
-                    
-                    Button {
-                        
-                    } label: {
-                        Label("", systemImage: "checkmark.circle")
-                            .font(.system(size: 24))
-                    }
-                }
-            }.padding(30)
-            .frame(width: 331, height: 201)
-                .background(Color(red: 0.52, green: 0.51, blue: 0.51).opacity(0.5))
-                .foregroundColor(.white)
-                .cornerRadius(20)
+                
+                Image(systemName: "arrow.right")
+                    .dynamicTypeSize(.xxxLarge)
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    .offset(x:134, y:70)
+                
+            }
+            
+            Image(systemName: "chevron.down")
+                .dynamicTypeSize(.xxxLarge)
+                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                .offset(y:70)
+                .font(.system(size: 36))
                 
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black)
                     
     }
 }
