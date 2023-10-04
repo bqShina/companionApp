@@ -19,7 +19,7 @@ struct OnGoingTaskView: View {
             Image("dog")
             
             ZStack{
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                RoundedRectangle(cornerRadius: 25.0)
                     .frame(width:331, height:201)
                     .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                     .opacity(0.2)
@@ -29,19 +29,31 @@ struct OnGoingTaskView: View {
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
                 
-                Image(systemName: "arrow.right")
-                    .dynamicTypeSize(.xxxLarge)
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                    .offset(x:134, y:70)
+                Button{
+                    
+                }
+                label: {
+                    Image(systemName: "arrow.right")
+                        .dynamicTypeSize(.xxxLarge)
+                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        .offset(x:134, y:70)
+                }
+                
+                
                 
             }
             
-            Image(systemName: "chevron.down")
-                .dynamicTypeSize(.xxxLarge)
-                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                .offset(y:70)
-                .font(.system(size: 36))
+            Button{
                 
+            }
+            label: {
+                Image(systemName: "chevron.down")
+                    .dynamicTypeSize(.xxxLarge)
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    .offset(y:70)
+                    .font(.system(size: 36))
+            }
+            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
                     
