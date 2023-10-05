@@ -17,7 +17,7 @@ struct ContentView: View {
         
         
         
-        NavigationView {
+        NavigationStack {
             TabView {
                 
                 HomePageView()
@@ -71,14 +71,14 @@ struct ContentView: View {
             }
             .onAppear {
 
-                UITabBar.appearance().unselectedItemTintColor = colorScheme == .dark ? .white : .black
-                UITabBar.appearance().barTintColor = UIColor(red: 54, green: 54, blue: 54, alpha: 1)
+//                UITabBar.appearance().unselectedItemTintColor = colorScheme == .dark ? .white : .black
+//                UITabBar.appearance().barTintColor = UIColor(red: 54, green: 54, blue: 54, alpha: 1)
                 
             }
             .tint(Color(red: 0.47, green: 0.47, blue: 0.47).opacity(0.85))
         }
-        .navigationViewStyle(StackNavigationViewStyle())
-//        .navigationTitle("Companion")
+//        .navigationViewStyle(StackNavigationViewStyle())
+
         
         
     }
