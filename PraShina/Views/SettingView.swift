@@ -15,17 +15,11 @@ struct SettingView: View {
     
     var body: some View {
         VStack(spacing: 30) {
-            HStack(alignment: .top, spacing: 100) {
-                Image(systemName: "arrowshape.turn.up.backward")
-                    .font(.system(size: 24))
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                Text("Setting")
-                    .font(.system(size: 24))
-                    .fontWeight(.bold)
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                Spacer()
-            }
-            .padding(.horizontal)
+            Text("Setting")
+                .font(.system(size: 24))
+                .fontWeight(.bold)
+                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+            
             
             HStack(spacing: 80) {
                 Image("small_dog")
