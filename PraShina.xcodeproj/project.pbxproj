@@ -16,7 +16,7 @@
 		0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4642ACBAC760000A250 /* SettingView.swift */; };
 		D569AA802ACCDBE4006961B9 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */; };
 		D569AA822ACCDC14006961B9 /* ChooseYourCompanionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */; };
-		D569AA862ACD9982006961B9 /* PendingTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA852ACD9982006961B9 /* PendingTaskView.swift */; };
+		D569AA862ACD9982006961B9 /* ChooseTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA852ACD9982006961B9 /* ChooseTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		0BBDD4642ACBAC760000A250 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseYourCompanionView.swift; sourceTree = "<group>"; };
-		D569AA852ACD9982006961B9 /* PendingTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingTaskView.swift; sourceTree = "<group>"; };
+		D569AA852ACD9982006961B9 /* ChooseTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 				D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */,
 				D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */,
 				0B5552262ACE39EE00DCB7C2 /* NameCompanionView.swift */,
-				D569AA852ACD9982006961B9 /* PendingTaskView.swift */,
+				D569AA852ACD9982006961B9 /* ChooseTaskView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BBDD4612ACA65870000A250 /* OnGoingTaskView.swift in Sources */,
-				D569AA862ACD9982006961B9 /* PendingTaskView.swift in Sources */,
+				D569AA862ACD9982006961B9 /* ChooseTaskView.swift in Sources */,
 				0B5552272ACE39EE00DCB7C2 /* NameCompanionView.swift in Sources */,
 				0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */,
 				0BBDD4552ACA33470000A250 /* ContentView.swift in Sources */,
