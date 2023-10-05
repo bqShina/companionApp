@@ -26,13 +26,13 @@ struct NameCompanionView: View {
                     Image(systemName: "arrowshape.turn.up.backward")
                         .dynamicTypeSize(.xxxLarge)
                         .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                        .offset(x:-20, y:-30)
+                        .offset(x:-20, y:-120)
                 }
                 
                 Text("Name Your Companion")
                     .font(.system(size:24, weight: .bold))
                     .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                    .offset(y:-30)
+                    .offset(y:-120)
             }
             
             Button {
@@ -45,10 +45,12 @@ struct NameCompanionView: View {
                     .imageScale(.large)
                     .foregroundStyle(.tint)
                     .multilineTextAlignment(.center)
+                    .offset(y:-70)
             
             Text("Tap on the Dog to add the name")
                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                 .font(.system(size:20, weight: .regular))
+                .offset(y:-50)
             
             Button{
                 isFocused.toggle()
@@ -58,11 +60,9 @@ struct NameCompanionView: View {
                     .border(colorScheme == .dark ? Color.white : Color.black)
                     .textFieldStyle(.roundedBorder)
                     .frame(width:200)
-                                        
-            }
+            }.offset(y:-40)
             
             }
-        .offset(y:-117)
         }
 }
 
