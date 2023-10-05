@@ -11,7 +11,6 @@ struct SettingView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var notificationOn: Bool = true
     @State private var darkMode: Bool = true
-    @Environment(\.colorScheme) var colorScheme
 
     
     var body: some View {

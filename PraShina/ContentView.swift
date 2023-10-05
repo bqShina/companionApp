@@ -6,80 +6,82 @@
 //
 
 import SwiftUI
-import UIKit
+//import UIKit
+
 
 struct ContentView: View {
+
     @Environment(\.colorScheme) var colorScheme
-    var tabItemColor: UIColor {
-            colorScheme == .dark ? .white : .black
-        }
 
     var body: some View {
         
         
         
-      
-                TabView {
-
-                    HomePageView()
+        NavigationView {
+            TabView {
+                
+                HomePageView()
                     .tabItem() {
-                            VStack {
-                                Image(systemName: "pawprint")
-                                    
-                                    
+                        VStack {
+                            Image(systemName: "pawprint")
+                            
+                            
                             Text("home")
-                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                            }.foregroundStyle(.red)
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        }.foregroundStyle(.red)
                         
-                            
-                            
-                        }
-                        OnGoingTaskView()
-                        .tabItem() {
-                            VStack {
-                                Image(systemName: "checklist")
-                                Text("Ongoing task")
-                                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                                
-                            }
-                            
-
-                        }
-
-
-                    VStack{
-
-                        Text("History")
+                        
                         
                     }
-                        .tabItem() {
-                            VStack {
-                                Image(systemName: "calendar")
-                                Text("History")
-                                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                                
-                            }
-
+                OnGoingTaskView()
+                    .tabItem() {
+                        VStack {
+                            Image(systemName: "checklist")
+                            Text("Ongoing task")
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            
                         }
-                    SettingView()
+                        
+                        
+                    }
+                
+                
+                VStack{
+                    
+                    Text("History")
+                    
+                }
+                .tabItem() {
+                    VStack {
+                        Image(systemName: "calendar")
+                        Text("History")
+                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        
+                    }
+                    
+                }
+                SettingView()
                     .tabItem() {
                         VStack {
                             Image(systemName: "gearshape")
                             Text("Setting")
-                                    .foregroundColor(.white)
+                                .foregroundColor(.white)
                         }
                     }
-                }
-                .onAppear {
-                    print(tabItemColor)
-                    UITabBar.appearance().unselectedItemTintColor = tabItemColor
-                    UITabBar.appearance().barTintColor = UIColor(red: 54, green: 54, blue: 54, alpha: 1)
-                    
-                }
-                .tint(Color(red: 0.47, green: 0.47, blue: 0.47).opacity(0.85))
-        }
+            }
+            .onAppear {
 
-    
+                UITabBar.appearance().unselectedItemTintColor = colorScheme == .dark ? .white : .black
+                UITabBar.appearance().barTintColor = UIColor(red: 54, green: 54, blue: 54, alpha: 1)
+                
+            }
+            .tint(Color(red: 0.47, green: 0.47, blue: 0.47).opacity(0.85))
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+//        .navigationTitle("Companion")
+        
+        
+    }
     
 }
 
