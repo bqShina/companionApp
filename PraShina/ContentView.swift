@@ -22,10 +22,6 @@ struct ContentView: View {
                         Text("Home")
                         
                     }
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(colorScheme == .dark ? Color.white : Color.black)
-
                     .tabItem() {
                             VStack {
                                 Image(systemName: "pawprint")
@@ -66,9 +62,6 @@ struct ContentView: View {
 
                         }
                     SettingView()
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(Color.black)
                     .tabItem() {
                         VStack {
                             Image(systemName: "gearshape")
