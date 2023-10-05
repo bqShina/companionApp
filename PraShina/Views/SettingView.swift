@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingView: View {
+    @Environment(\.colorScheme) var colorScheme
     @State private var notificationOn: Bool = true
     @State private var darkMode: Bool = true
     
@@ -55,7 +56,7 @@ struct SettingView: View {
             Button(action: {}, label: {
                 Text("Privacy & Security")
                     .font(.system(size: 18))
-                    .foregroundColor(.white)
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                     .fontWeight(.semibold)
                     .offset(x:-65)
             })
@@ -66,7 +67,7 @@ struct SettingView: View {
             Button(action: {}, label: {
                 Text("Help & Support")
                     .font(.system(size: 18))
-                    .foregroundColor(.white)
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                     .fontWeight(.semibold)
                     .offset(x:-75)
             })
@@ -77,7 +78,7 @@ struct SettingView: View {
             Button(action: {}, label: {
                 Text("About")
                     .font(.system(size: 18))
-                    .foregroundColor(.white)
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                     .fontWeight(.semibold)
                     .offset(x:-115)
             })

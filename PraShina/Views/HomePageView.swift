@@ -105,16 +105,18 @@ struct HomePageView: View {
                         .padding(.vertical, 15)
                         .font(.system(size:24, weight:.bold))
                         .cornerRadius(40)
+                    
                 })
                 .foregroundColor(.white)
                 .background(
                     LinearGradient(
-                        gradient: .init(colors: [Color.white, Color.blue.opacity(0.75)]),
+                        gradient: .init(colors: [Color(red: 0.27, green: 0.01, blue: 0.98), Color(red: 1, green: 0.36, blue: 0)]),
                         startPoint: .init(x: -0.33, y: -0.33),
                         endPoint: .init(x: 0.66, y: 0.66)
                     ))
                 .clipShape(RoundedRectangle(cornerRadius: 30))
                 .buttonStyle(PlainButtonStyle())
+                
             }
             .frame(height: 100)
             .offset(y:-45)

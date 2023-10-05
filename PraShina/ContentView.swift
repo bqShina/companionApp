@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
+    var tabItemColor: UIColor {
+            colorScheme == .dark ? .white : .black
+        }
+
     var body: some View {
         
         
@@ -16,16 +21,8 @@ struct ContentView: View {
       
                 TabView {
 
-                    
-                    VStack{
 
-                        Text("Home")
-                        
-                    }
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(colorScheme == .dark ? Color.white : Color.black)
-
+                    HomePageView()
                     .tabItem() {
                             VStack {
                                 Image(systemName: "pawprint")
@@ -50,12 +47,12 @@ struct ContentView: View {
 
                         }
 
-//                    VStack{
-//
-//                        Text("History")
-//                        
-//                    }
-                    NameCompanionView()
+
+                    VStack{
+
+                        Text("History")
+                        
+                    }
                         .tabItem() {
                             VStack {
                                 Image(systemName: "calendar")
@@ -66,9 +63,6 @@ struct ContentView: View {
 
                         }
                     SettingView()
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(Color.black)
                     .tabItem() {
                         VStack {
                             Image(systemName: "gearshape")
@@ -78,7 +72,8 @@ struct ContentView: View {
                     }
                 }
                 .onAppear {
-                    UITabBar.appearance().unselectedItemTintColor = .white
+                    print(tabItemColor)
+                    UITabBar.appearance().unselectedItemTintColor = tabItemColor
                     UITabBar.appearance().barTintColor = UIColor(red: 54, green: 54, blue: 54, alpha: 1)
                     
                 }
