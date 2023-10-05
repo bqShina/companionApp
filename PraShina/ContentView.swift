@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         
         
@@ -21,9 +22,9 @@ struct ContentView: View {
                         Text("Home")
                         
                     }
-                    .foregroundColor(.white)
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-//                    .background(Color.black)
+                    .background(colorScheme == .dark ? Color.white : Color.black)
 
                     .tabItem() {
                             VStack {
@@ -31,7 +32,7 @@ struct ContentView: View {
                                     
                                     
                             Text("home")
-                                    .foregroundColor(.white)
+                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                             }.foregroundStyle(.red)
                         
                             
@@ -42,7 +43,7 @@ struct ContentView: View {
                             VStack {
                                 Image(systemName: "checklist")
                                 Text("Ongoing task")
-                                        .foregroundColor(.white)
+                                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                                 
                             }
                             
@@ -55,15 +56,11 @@ struct ContentView: View {
 //                        
 //                    }
                     NameCompanionView()
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(Color.black)
-
                         .tabItem() {
                             VStack {
                                 Image(systemName: "calendar")
                                 Text("History")
-                                        .foregroundColor(.white)
+                                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                                 
                             }
 

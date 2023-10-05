@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NameCompanionView: View {
+    @Environment(\.colorScheme) var colorScheme
     @FocusState private var isFocused: Bool
     @State private var text: String = ""
     
@@ -17,18 +18,23 @@ struct NameCompanionView: View {
     var body: some View {
         
         VStack {
-            Button {
-                    } label: {
-                    Label("", systemImage:"arrowshape.turn.up.backward" )
-                                .font(.system(size: 24))
-                    }
+            HStack{
+                Button{
+                    
+                }
+                label: {
+                    Image(systemName: "arrowshape.turn.up.backward")
+                        .dynamicTypeSize(.xxxLarge)
+                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        .offset(x:-20, y:-30)
+                }
+                
+                Text("Name Your Companion")
+                    .font(.system(size:24, weight: .bold))
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    .offset(y:-30)
+            }
             
-                .frame(width: 28, height: 20)
-                .offset(x:-160)
-                .offset(y:-88)
-                    Text("Name of your companion")
-            
-                .offset(y:-114)
             Button {
                 isFocused.toggle()
                     } label: {
@@ -36,29 +42,28 @@ struct NameCompanionView: View {
                         
                         
                     }
-                
                     .imageScale(.large)
                     .foregroundStyle(.tint)
+                    .multilineTextAlignment(.center)
+            
             Text("Tap on the Dog to add the name")
-            TextField("", text : $text)
-                .focused($isFocused)
-                
-             
+                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                .font(.system(size:20, weight: .regular))
             
-                
+            Button{
+                isFocused.toggle()
+            } label: {
+                TextField("", text : $text)
+                    .focused($isFocused)
+                    .border(colorScheme == .dark ? Color.white : Color.black)
+                    .textFieldStyle(.roundedBorder)
+                    .frame(width:200)
+                                        
+            }
             
-            
-                
-            
-            
-                
-//                Spacer()
             }
         .offset(y:-117)
-        
         }
-        
-        
 }
 
 
