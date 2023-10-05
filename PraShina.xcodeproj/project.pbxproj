@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5552272ACE39EE00DCB7C2 /* NameCompanionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5552262ACE39EE00DCB7C2 /* NameCompanionView.swift */; };
 		0BBDD4532ACA33470000A250 /* PraShinaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4522ACA33470000A250 /* PraShinaApp.swift */; };
 		0BBDD4552ACA33470000A250 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4542ACA33470000A250 /* ContentView.swift */; };
 		0BBDD4572ACA33480000A250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDD4562ACA33480000A250 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B5552262ACE39EE00DCB7C2 /* NameCompanionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameCompanionView.swift; path = PraShina/Views/NameCompanionView.swift; sourceTree = SOURCE_ROOT; };
 		0BBDD44F2ACA33470000A250 /* PraShina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PraShina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BBDD4522ACA33470000A250 /* PraShinaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraShinaApp.swift; sourceTree = "<group>"; };
 		0BBDD4542ACA33470000A250 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +44,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B5552282ACE3A6600DCB7C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0BBDD4602ACA65870000A250 /* OnGoingTaskView.swift */,
+				0BBDD4642ACBAC760000A250 /* SettingView.swift */,
+				D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */,
+				D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */,
+				0B5552262ACE39EE00DCB7C2 /* NameCompanionView.swift */,
+				D569AA852ACD9982006961B9 /* PendingTaskView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0BBDD4462ACA33470000A250 = {
 			isa = PBXGroup;
 			children = (
@@ -61,13 +76,9 @@
 		0BBDD4512ACA33470000A250 /* PraShina */ = {
 			isa = PBXGroup;
 			children = (
+				0B5552282ACE3A6600DCB7C2 /* Views */,
 				0BBDD4522ACA33470000A250 /* PraShinaApp.swift */,
-				0BBDD4602ACA65870000A250 /* OnGoingTaskView.swift */,
 				0BBDD4542ACA33470000A250 /* ContentView.swift */,
-				0BBDD4642ACBAC760000A250 /* SettingView.swift */,
-				D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */,
-				D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */,
-				D569AA852ACD9982006961B9 /* PendingTaskView.swift */,
 				0BBDD4562ACA33480000A250 /* Assets.xcassets */,
 				0BBDD4582ACA33480000A250 /* Preview Content */,
 			);
@@ -154,6 +165,7 @@
 			files = (
 				0BBDD4612ACA65870000A250 /* OnGoingTaskView.swift in Sources */,
 				D569AA862ACD9982006961B9 /* PendingTaskView.swift in Sources */,
+				0B5552272ACE39EE00DCB7C2 /* NameCompanionView.swift in Sources */,
 				0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */,
 				0BBDD4552ACA33470000A250 /* ContentView.swift in Sources */,
 				0BBDD4532ACA33470000A250 /* PraShinaApp.swift in Sources */,
