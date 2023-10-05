@@ -23,7 +23,7 @@ struct ContentView: View {
                     }
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(Color.black)
+//                    .background(Color.black)
 
                     .tabItem() {
                             VStack {
@@ -49,11 +49,12 @@ struct ContentView: View {
 
                         }
 
-                    VStack{
-
-                        Text("History")
-                        
-                    }
+//                    VStack{
+//
+//                        Text("History")
+//                        
+//                    }
+                    NameCompanionView()
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color.black)

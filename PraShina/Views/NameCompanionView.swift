@@ -11,6 +11,9 @@ struct NameCompanionView: View {
     @FocusState private var isFocused: Bool
     @State private var text: String = ""
     
+    init() {
+        self.isFocused = false
+    }
     var body: some View {
         
         VStack {
@@ -29,7 +32,7 @@ struct NameCompanionView: View {
             Button {
                 isFocused.toggle()
                     } label: {
-                    Image("Image")
+                    Image("dogSmile")
                         
                         
                     }
