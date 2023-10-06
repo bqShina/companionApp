@@ -9,21 +9,37 @@ import SwiftUI
 
 struct ActivateMusicTaskView: View {
     @Environment(\.colorScheme) var colorScheme
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         VStack{
             HStack{
-                Image(systemName: "arrowshape.turn.up.left")
-                    .dynamicTypeSize(.xxxLarge)
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                    .offset(x:-57)
-                
-                Text("Companion")
-                    .font(.system(size: 30))
-                    .fontWeight(.heavy)
-                    .offset(x:-15)
-                
+                Text("")
+                    .navigationBarBackButtonHidden(true)
+                    .toolbar {                                    ToolbarItem(placement: .navigationBarLeading) {
+                        
+                        Button {
+                            presentationMode.wrappedValue.dismiss()
+                            dismiss()
+                        } label: {
+                            HStack {
+                                Image(systemName: "arrowshape.turn.up.left")
+                                    .dynamicTypeSize(.xxxLarge)
+                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                    .offset(x:23, y:20)
+                                
+                                Text("Companion")
+                                    .font(.system(size: 30))
+                                    .fontWeight(.heavy)
+                                    .offset(x:53, y:20)
+                            }
+                        }
+                    }
+                    }
             }
+            
+            
             Image("dogSmile")
             
             ZStack{
