@@ -56,16 +56,13 @@ struct OnGoingTaskView: View {
                         Image(systemName: "multiply.circle")
                             .font(.system(size: 26))
                             .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                            .offset(y:35)
-                        
-                    }
+                    }.offset(y:35)
                         
                         NavigationLink(destination: FinishTaskView()) {
                             Image(systemName: "checkmark.circle")
                                 .font(.system(size: 26))
                                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                                .offset(y:35)
-                        }
+                        }.offset(y:35)
                     }
                     
                 }

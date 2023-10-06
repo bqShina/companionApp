@@ -35,46 +35,53 @@ struct ChooseTaskView: View {
                 
             }
             label: {
-                ZStack{
-                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                        .frame(width:331, height:85)
-                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                        .opacity(0.2)
-                    
-                    HStack{
-                        Text("Listen to some music")
-                            .font(.system(size: 20))
-                            .fontWeight(.semibold)
-                            .multilineTextAlignment(.center)
+                NavigationLink(destination: ActivateMusicTaskView()){
+                    ZStack{
+                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                            .frame(width:331, height:85)
                             .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .opacity(0.2)
                         
-                        Image(systemName: "arrow.right")
-                            .dynamicTypeSize(.xxLarge)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        HStack{
+                            Text("Listen to some music")
+                                .font(.system(size: 20))
+                                .fontWeight(.semibold)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            
+                            Image(systemName: "arrow.right")
+                                .dynamicTypeSize(.xxLarge)
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        }
                     }
                 }
             }
+            
+            
+            
             
             Button{
                 
             }
             label: {
-                ZStack{
-                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                        .frame(width:331, height:85)
-                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                        .opacity(0.2)
-                    
-                    HStack{
-                        Text("Binge your favourite movie")
-                            .font(.system(size: 20))
-                            .fontWeight(.semibold)
-                            .multilineTextAlignment(.center)
+                NavigationLink(destination: ActivateMovieTaskView()){
+                    ZStack{
+                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                            .frame(width:331, height:85)
                             .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .opacity(0.2)
                         
-                        Image(systemName: "arrow.right")
-                            .dynamicTypeSize(.xxLarge)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        HStack{
+                            Text("Binge your favourite movie")
+                                .font(.system(size: 20))
+                                .fontWeight(.semibold)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            
+                            Image(systemName: "arrow.right")
+                                .dynamicTypeSize(.xxLarge)
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        }
                     }
                 }
             }

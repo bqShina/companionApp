@@ -1,5 +1,5 @@
 //
-//  ActiveTaskView.swift
+//  ActivateMovieTaskView.swift
 //  PraShina
 //
 //  Created by Anne Elvira on 6/10/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ActiveTaskView: View {
+struct ActivateMovieTaskView: View {
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -83,5 +83,5 @@ struct ActiveTaskView: View {
 }
 
 #Preview {
-    ActiveTaskView()
+    ActivateMovieTaskView()
 }

@@ -46,11 +46,12 @@ struct ContentView: View {
                     }
                 
                 
-                VStack{
-                    
-                    Text("History")
-                    
-                }
+//                VStack{
+//                    
+//                    Text("History")
+//                    
+//                }
+                ChooseTaskView()
                 .tabItem() {
                     VStack {
                         Image(systemName: "calendar")

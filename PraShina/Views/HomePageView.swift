@@ -87,39 +87,44 @@ struct HomePageView: View {
                     
                 
     //        Customization box
-            ZStack{
-                LinearGradient(
-                    gradient: .init(colors: [Color.white, Color.blue.opacity(0.66)]),
-                    startPoint: .init(x: 0.0, y: 0.0),
-                    endPoint: .init(x: 0.75, y: 0.75)
-                )
-                .mask(
-                    RoundedRectangle(cornerRadius: 15)
-                        .frame(width: 120, height: 45, alignment: .center)
-                        .blur(radius: 10)
-                )
-                .padding(.top, 20)
-                Button(action: {}, label: {
-                    Label("Customize", systemImage:"pencil.circle")
-                        .padding(.horizontal, 80)
-                        .padding(.vertical, 15)
-                        .font(.system(size:24, weight:.bold))
-                        .cornerRadius(40)
-                    
-                })
-                .foregroundColor(.white)
-                .background(
-                    LinearGradient(
-                        gradient: .init(colors: [Color(red: 0.27, green: 0.01, blue: 0.98), Color(red: 1, green: 0.36, blue: 0)]),
-                        startPoint: .init(x: -0.33, y: -0.33),
-                        endPoint: .init(x: 0.66, y: 0.66)
-                    ))
-                .clipShape(RoundedRectangle(cornerRadius: 30))
-                .buttonStyle(PlainButtonStyle())
+            Button{
                 
+            }label: {
+                ZStack{
+                    LinearGradient(
+                        gradient: .init(colors: [Color.white, Color.blue.opacity(0.66)]),
+                        startPoint: .init(x: 0.0, y: 0.0),
+                        endPoint: .init(x: 0.75, y: 0.75)
+                    )
+                    .mask(
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 120, height: 45, alignment: .center)
+                            .blur(radius: 10)
+                    )
+                    .padding(.top, 20)
+                    Button(action: {}, label: {
+                        Label("Customize", systemImage:"pencil.circle")
+                            .padding(.horizontal, 80)
+                            .padding(.vertical, 15)
+                            .font(.system(size:24, weight:.bold))
+                            .cornerRadius(40)
+                        
+                    })
+                    .foregroundColor(.white)
+                    .background(
+                        LinearGradient(
+                            gradient: .init(colors: [Color(red: 0.27, green: 0.01, blue: 0.98), Color(red: 1, green: 0.36, blue: 0)]),
+                            startPoint: .init(x: -0.33, y: -0.33),
+                            endPoint: .init(x: 0.66, y: 0.66)
+                        ))
+                    .clipShape(RoundedRectangle(cornerRadius: 30))
+                    .buttonStyle(PlainButtonStyle())
+                    
+                }
+                .frame(height: 100)
+                .offset(y:-45)
             }
-            .frame(height: 100)
-            .offset(y:-45)
+            
 
         }
     }
