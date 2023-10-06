@@ -33,14 +33,12 @@ struct FinishTaskView: View {
                                        .fontWeight(.bold)
                                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                               
-
                                    Spacer()
                                }
                            })
                            
                        }
                        })
-            
             
             
                
