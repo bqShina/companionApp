@@ -11,7 +11,7 @@ struct SettingView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var notificationOn: Bool = true
     @State private var darkMode: Bool = true
-
+    @Binding var name: String
     
     var body: some View {
         VStack(spacing: 30) {
@@ -95,5 +95,5 @@ struct SettingView: View {
 }
 
 #Preview {
-    SettingView()
+    SettingView(name: .constant("Companion"))
 }
