@@ -47,7 +47,7 @@ struct CustomTabView: View {
                             Text(tabBarItems[index].title)
                                 .font(.caption)
                         }
-                        .foregroundColor(index + 1 == tabSelection ? .gray : unSelectedColor)
+                        .foregroundColor(index + 1 == tabSelection ? .accentColor : unSelectedColor)
                     }
                     
                 }

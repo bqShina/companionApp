@@ -44,7 +44,7 @@ struct ContentView: View {
 //                    ChooseTaskView()
                     OnGoingTaskView()
                         .tag(2)
-                    Text("History")
+                    HistoryView()
                         .tag(3)
                     SettingView()
                         .tag(4)

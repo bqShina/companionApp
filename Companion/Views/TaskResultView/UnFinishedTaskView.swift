@@ -23,7 +23,7 @@ struct UnFinishedTaskView: View {
            Image("angryDog")
                .aspectRatio(contentMode: .fit)
                .foregroundStyle(.tint)
-               .confettiCannon(counter: $counter, confettis: [.text("💣")], confettiSize: 20, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200, repetitions: 2, repetitionInterval: 0.3)
+               .confettiCannon(counter: $counter, confettis: [.text("💢")], confettiSize: 24, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200, repetitions: 2, repetitionInterval: 0.3)
             
             
             VStack {
