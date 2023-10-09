@@ -103,11 +103,13 @@ struct HomePageView: View {
 //                    )
 //                    .padding(.top, 20)
                     Button(action: {}, label: {
-                        Label("Customize", systemImage:"pencil.circle")
-                            .padding(.horizontal, 80)
-                            .padding(.vertical, 15)
-                            .font(.system(size:24, weight:.bold))
-                            .cornerRadius(40)
+                        NavigationLink(destination: CustomColourView()){
+                            Label("Customize", systemImage:"pencil.circle")
+                                .padding(.horizontal, 80)
+                                .padding(.vertical, 15)
+                                .font(.system(size:24, weight:.bold))
+                                .cornerRadius(40)
+                        }
                         
                     })
                     .foregroundColor(.white)

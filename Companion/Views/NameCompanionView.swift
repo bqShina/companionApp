@@ -46,9 +46,9 @@ struct NameCompanionView: View {
             .multilineTextAlignment(.center)
             .offset(y:-140)
                 
-            Text("Tap on the Dog to add the name")
+            Text("Please input the name you choose")
                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                .font(.system(size:20, weight: .regular))
+                .font(.system(size:20, weight: .semibold))
                 .offset(y:-180)
                 
             Button{
