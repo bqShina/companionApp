@@ -11,17 +11,11 @@ struct SettingView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var notificationOn: Bool = true
     @State private var darkMode: Bool = true
-//    @Binding var name: String
     @State private var savedName: String = ""
     
-//    func loadNameFromUserDefaults() {
-//            if let savedUserName = UserDefaults.standard.string(forKey: "name") {
-//                savedName = savedUserName
-//            }
-//        }
     
     func loadNameFromUserDefaults() {
-            if let savedUserName = UserDefaults.standard.string(forKey: "userName") {
+            if let savedUserName = UserDefaults.standard.string(forKey: "name") {
                 savedName = savedUserName
             }
         }
@@ -112,7 +106,6 @@ struct SettingView: View {
         }
         .padding(.horizontal)
         .onAppear {
-            Text("on appear")
             loadNameFromUserDefaults()
         }
     }

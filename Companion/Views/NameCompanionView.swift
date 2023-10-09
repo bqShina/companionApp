@@ -19,11 +19,11 @@ struct NameCompanionView: View {
             UserDefaults.standard.set(name, forKey: "name")
         }
     
-    func loadNameFromUserDefaults() {
-            if let savedUserName = UserDefaults.standard.string(forKey: "name") {
-                savedName = savedUserName
-            }
-        }
+//    func loadNameFromUserDefaults() {
+//            if let savedUserName = UserDefaults.standard.string(forKey: "name") {
+//                savedName = savedUserName
+//            }
+//        }
     
     init() {
         self.isFocused = false
@@ -61,12 +61,12 @@ struct NameCompanionView: View {
                         .frame(width:200)
             }.offset(y:-190)
             
-            Text("Hello, \(savedName)")
+//            Text("Hello, \(savedName)")
                 
             Button{
                 saveNameToUserDefaults()
-                loadNameFromUserDefaults()
                 dismiss()
+//                loadNameFromUserDefaults()
             }
             label: {
                 ZStack{
@@ -88,9 +88,6 @@ struct NameCompanionView: View {
                             .offset(x:35)
                     }
                 }
-    //            NavigationLink(destination: ContentView(name: $name)){
-    //
-    //            }
             }.offset(y:-170)
         }
             

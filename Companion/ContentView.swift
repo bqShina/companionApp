@@ -19,8 +19,6 @@ struct ContentView: View {
     @State var selectedTab: Tabs = .home
     @State private var tabSelection = 1
     
-//    @Binding var name: String
-
     var body: some View {
         
 
