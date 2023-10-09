@@ -10,46 +10,20 @@ import ConfettiSwiftUI
 
 struct UnFinishedTaskView: View {
     @Environment(\.colorScheme) var colorScheme
-    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    @Environment(\.presentationMode) private var presentationMode
     @State private var counter = 0
     
     var body: some View {
         let contentColor: Color = colorScheme == .dark ? Color.white : Color.black
         
         VStack(spacing: 50) {
-            Spacer()
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .navigationBarBackButtonHidden(true)
-                .toolbar(content: {
-                       ToolbarItem (placement: .navigationBarLeading)  {
-                                
-                           Button(action: {
-                               presentationMode.wrappedValue.dismiss()
-                           }, label: {
-                               HStack(alignment: .top, spacing: 50) {
-                                   
-                                   Image(systemName: "arrowshape.turn.up.backward")
-                                       .font(.system(size: 24))
-                                       .foregroundColor(contentColor)
-                                   
-                                   Text("Task not completed!")
-                                       .font(.system(size: 24))
-                                       .fontWeight(.bold)
-                                       .foregroundColor(contentColor)
-                              
-                                   Spacer()
-                               }
-                           })
-                           
-                       }
-                       })
+            CustomNavigationBar(presentationMode: presentationMode, contentColor: contentColor, spacingNum: 45, title: "Task not completed!")
             
             
-               
            Image("angryDog")
                .aspectRatio(contentMode: .fit)
                .foregroundStyle(.tint)
-               .confettiCannon(counter: $counter, confettis: [.text("💩")], confettiSize: 20, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200, repetitions: 2, repetitionInterval: 0.3)
+               .confettiCannon(counter: $counter, confettis: [.text("💣")], confettiSize: 20, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200, repetitions: 2, repetitionInterval: 0.3)
             
             
             VStack {
@@ -82,3 +56,38 @@ struct UnFinishedTaskView: View {
 #Preview {
     UnFinishedTaskView()
 }
+
+struct CustomNavigationBar: View {
+    @Binding var presentationMode: PresentationMode
+    var contentColor: Color
+    var spacingNum: CGFloat
+    var title: String
+
+    var body: some View {
+        Spacer()
+            .navigationBarBackButtonHidden(true)
+               .toolbar(content: {
+                   ToolbarItem (placement: .navigationBarLeading)  {
+                            
+                       Button(action: {
+                           $presentationMode.wrappedValue.dismiss()
+                       }, label: {
+                           HStack(spacing: spacingNum) {
+                               Image(systemName: "arrowshape.turn.up.backward")
+                                   .font(.system(size: 24))
+                                   .foregroundColor(contentColor)
+                               
+                               Text(title)
+                                   .font(.system(size: 24))
+                                   .fontWeight(.bold)
+                                   .foregroundColor(contentColor)
+                               
+                               Spacer()
+                           }
+                       })
+                       
+                   }
+                })
+    }
+}
+

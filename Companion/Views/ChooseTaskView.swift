@@ -14,30 +14,30 @@ struct ChooseTaskView: View {
     
     var body: some View {
         VStack{
-            HStack{
-                Text("")
-                    .navigationBarBackButtonHidden(true)
-                    .toolbar {                                    ToolbarItem(placement: .navigationBarLeading) {
-                        
-                        Button {
-                            presentationMode.wrappedValue.dismiss()
-                            dismiss()
-                        } label: {
-                            HStack {
-                                Image(systemName: "arrowshape.turn.up.left")
-                                    .dynamicTypeSize(.xxxLarge)
-                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                                    .offset(x:23, y:20)
-                                
-                                Text("Companion")
-                                    .font(.system(size: 30))
-                                    .fontWeight(.heavy)
-                                    .offset(x:53, y:20)
-                            }
-                        }
-                    }
-                    }
-            }
+//            HStack{
+//                Text("")
+//                    .navigationBarBackButtonHidden(true)
+//                    .toolbar {                                    ToolbarItem(placement: .navigationBarLeading) {
+//                        
+//                        Button {
+//                            presentationMode.wrappedValue.dismiss()
+//                            dismiss()
+//                        } label: {
+//                            HStack {
+//                                Image(systemName: "arrowshape.turn.up.left")
+//                                    .dynamicTypeSize(.xxxLarge)
+//                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+//                                    .offset(x:23, y:20)
+//                                
+//                                Text("Companion")
+//                                    .font(.system(size: 30))
+//                                    .fontWeight(.heavy)
+//                                    .offset(x:53, y:20)
+//                            }
+//                        }
+//                    }
+//                    }
+//            }
             
             Image("dog")
                 .offset(y:-25)

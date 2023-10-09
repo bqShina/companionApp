@@ -15,7 +15,7 @@ struct ActivateMovieTaskView: View {
     var body: some View {
         VStack{
             HStack{
-                Text("")
+                Spacer()
                     .navigationBarBackButtonHidden(true)
                     .toolbar {                                    ToolbarItem(placement: .navigationBarLeading) {
                         

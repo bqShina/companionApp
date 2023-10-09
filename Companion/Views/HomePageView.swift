@@ -20,7 +20,7 @@ struct HomePageView: View {
                     .offset(y:20)
                 Image(systemName: "trophy")
                     .dynamicTypeSize(.xxxLarge)
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    .foregroundColor(.yellow)
                     .offset(y:20)
             }
             Text("Complete 3 tasks to level up!")

@@ -10,37 +10,12 @@ import ConfettiSwiftUI
 
 struct FinishTaskView: View {
     @Environment(\.colorScheme) var colorScheme
-    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @State private var counter = 0
-    
+    @Environment(\.presentationMode) private var presentationMode
     var body: some View {
-        
+        let contentColor: Color = colorScheme == .dark ? Color.white : Color.black
         VStack(spacing: 50) {
-            Spacer()
-                    .navigationBarBackButtonHidden(true)
-                   .toolbar(content: {
-                       ToolbarItem (placement: .navigationBarLeading)  {
-                                
-                           Button(action: {
-                               presentationMode.wrappedValue.dismiss()
-                           }, label: {
-                               HStack(alignment: .top, spacing: 100) {
-                                   Image(systemName: "arrowshape.turn.up.backward")
-                                       .font(.system(size: 24))
-                                       .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                                   Text("Level Up!")
-                                       .font(.system(size: 24))
-                                       .fontWeight(.bold)
-                                       .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                              
-                                   Spacer()
-                               }
-                           })
-                           
-                       }
-                       })
-            
-            
+            CustomNavigationBar(presentationMode: presentationMode, contentColor: contentColor, spacingNum: 100, title: "Level Up!")
                
            Image("finishedTaskDog")
                .aspectRatio(contentMode: .fit)
@@ -80,3 +55,4 @@ struct FinishTaskView: View {
 #Preview {
     FinishTaskView()
 }
+
