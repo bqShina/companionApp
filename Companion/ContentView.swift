@@ -47,6 +47,7 @@ struct ContentView: View {
                     OnGoingTaskView()
                         .tag(2)
                     NameCompanionView()
+//                    HistoryView()
                         .tag(3)
                     SettingView()
                         .tag(4)
