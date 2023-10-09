@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct PraShinaApp: App {
+struct CompanionApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

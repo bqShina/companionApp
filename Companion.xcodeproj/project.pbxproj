@@ -11,11 +11,11 @@
 		0B26062E2ACF876E00E2B951 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B26062D2ACF876E00E2B951 /* CustomTabView.swift */; };
 		0B2606302ACF943600E2B951 /* WelcomeVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B26062F2ACF943600E2B951 /* WelcomeVideoView.swift */; };
 		0B2606342ACF95C900E2B951 /* welcome.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0B2606332ACF95C900E2B951 /* welcome.mov */; };
-		0B5552272ACE39EE00DCB7C2 /* NameCompanionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5552262ACE39EE00DCB7C2 /* NameCompanionView.swift */; };
 		0B55522D2ACE58D100DCB7C2 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0B55522C2ACE58D100DCB7C2 /* ConfettiSwiftUI */; };
 		0B93431C2AD2B9B1003FF623 /* UnFinishedTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B93431B2AD2B9B1003FF623 /* UnFinishedTaskView.swift */; };
 		0B93431E2AD36F48003FF623 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B93431D2AD36F48003FF623 /* HistoryView.swift */; };
-		0BBDD4532ACA33470000A250 /* PraShinaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4522ACA33470000A250 /* PraShinaApp.swift */; };
+		0B9343202AD37BFE003FF623 /* NameCompanionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B93431F2AD37BFE003FF623 /* NameCompanionView.swift */; };
+		0BBDD4532ACA33470000A250 /* CompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4522ACA33470000A250 /* CompanionApp.swift */; };
 		0BBDD4552ACA33470000A250 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4542ACA33470000A250 /* ContentView.swift */; };
 		0BBDD4572ACA33480000A250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDD4562ACA33480000A250 /* Assets.xcassets */; };
 		0BBDD45A2ACA33480000A250 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDD4592ACA33480000A250 /* Preview Assets.xcassets */; };
@@ -33,11 +33,11 @@
 		0B26062D2ACF876E00E2B951 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		0B26062F2ACF943600E2B951 /* WelcomeVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVideoView.swift; sourceTree = "<group>"; };
 		0B2606332ACF95C900E2B951 /* welcome.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = welcome.mov; path = ../../../../Downloads/welcome.mov; sourceTree = "<group>"; };
-		0B5552262ACE39EE00DCB7C2 /* NameCompanionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameCompanionView.swift; path = PraShina/Views/NameCompanionView.swift; sourceTree = SOURCE_ROOT; };
 		0B93431B2AD2B9B1003FF623 /* UnFinishedTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnFinishedTaskView.swift; sourceTree = "<group>"; };
 		0B93431D2AD36F48003FF623 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		0BBDD44F2ACA33470000A250 /* PraShina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PraShina.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BBDD4522ACA33470000A250 /* PraShinaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraShinaApp.swift; sourceTree = "<group>"; };
+		0B93431F2AD37BFE003FF623 /* NameCompanionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameCompanionView.swift; sourceTree = "<group>"; };
+		0BBDD44F2ACA33470000A250 /* companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = companion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BBDD4522ACA33470000A250 /* CompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanionApp.swift; sourceTree = "<group>"; };
 		0BBDD4542ACA33470000A250 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BBDD4562ACA33480000A250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BBDD4592ACA33480000A250 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				0BBDD4642ACBAC760000A250 /* SettingView.swift */,
 				D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */,
 				D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */,
-				0B5552262ACE39EE00DCB7C2 /* NameCompanionView.swift */,
+				0B93431F2AD37BFE003FF623 /* NameCompanionView.swift */,
 				D569AA852ACD9982006961B9 /* ChooseTaskView.swift */,
 				D5037E052ACF7EA700675FC7 /* ActivateMusicTaskView.swift */,
 				D5037E072ACF8BEF00675FC7 /* ActivateMovieTaskView.swift */,
@@ -101,7 +101,7 @@
 		0BBDD4502ACA33470000A250 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0BBDD44F2ACA33470000A250 /* PraShina.app */,
+				0BBDD44F2ACA33470000A250 /* companion.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0B5552282ACE3A6600DCB7C2 /* Views */,
-				0BBDD4522ACA33470000A250 /* PraShinaApp.swift */,
+				0BBDD4522ACA33470000A250 /* CompanionApp.swift */,
 				0BBDD4542ACA33470000A250 /* ContentView.swift */,
 				0BBDD4562ACA33480000A250 /* Assets.xcassets */,
 				0B2606332ACF95C900E2B951 /* welcome.mov */,
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0BBDD44E2ACA33470000A250 /* PraShina */ = {
+		0BBDD44E2ACA33470000A250 /* companion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0BBDD45D2ACA33480000A250 /* Build configuration list for PBXNativeTarget "PraShina" */;
+			buildConfigurationList = 0BBDD45D2ACA33480000A250 /* Build configuration list for PBXNativeTarget "companion" */;
 			buildPhases = (
 				0BBDD44B2ACA33470000A250 /* Sources */,
 				0BBDD44C2ACA33470000A250 /* Frameworks */,
@@ -142,12 +142,12 @@
 			);
 			dependencies = (
 			);
-			name = PraShina;
+			name = companion;
 			packageProductDependencies = (
 				0B55522C2ACE58D100DCB7C2 /* ConfettiSwiftUI */,
 			);
 			productName = PraShina;
-			productReference = 0BBDD44F2ACA33470000A250 /* PraShina.app */;
+			productReference = 0BBDD44F2ACA33470000A250 /* companion.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0BBDD44A2ACA33470000A250 /* Build configuration list for PBXProject "PraShina" */;
+			buildConfigurationList = 0BBDD44A2ACA33470000A250 /* Build configuration list for PBXProject "Companion" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -181,7 +181,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0BBDD44E2ACA33470000A250 /* PraShina */,
+				0BBDD44E2ACA33470000A250 /* companion */,
 			);
 		};
 /* End PBXProject section */
@@ -212,10 +212,10 @@
 				0B2606302ACF943600E2B951 /* WelcomeVideoView.swift in Sources */,
 				0B26062C2ACF7E1300E2B951 /* FinishedTaskView.swift in Sources */,
 				0B93431E2AD36F48003FF623 /* HistoryView.swift in Sources */,
-				0B5552272ACE39EE00DCB7C2 /* NameCompanionView.swift in Sources */,
 				0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */,
 				0BBDD4552ACA33470000A250 /* ContentView.swift in Sources */,
-				0BBDD4532ACA33470000A250 /* PraShinaApp.swift in Sources */,
+				0BBDD4532ACA33470000A250 /* CompanionApp.swift in Sources */,
+				0B9343202AD37BFE003FF623 /* NameCompanionView.swift in Sources */,
 				0B26062E2ACF876E00E2B951 /* CustomTabView.swift in Sources */,
 				D569AA802ACCDBE4006961B9 /* HomePageView.swift in Sources */,
 				D569AA822ACCDC14006961B9 /* ChooseYourCompanionView.swift in Sources */,
@@ -351,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PraShina/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Companion/Preview Content\"";
 				DEVELOPMENT_TEAM = Y56U5X7F52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -380,7 +380,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PraShina/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Companion/Preview Content\"";
 				DEVELOPMENT_TEAM = Y56U5X7F52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -405,7 +405,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0BBDD44A2ACA33470000A250 /* Build configuration list for PBXProject "PraShina" */ = {
+		0BBDD44A2ACA33470000A250 /* Build configuration list for PBXProject "Companion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0BBDD45B2ACA33480000A250 /* Debug */,
@@ -414,7 +414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0BBDD45D2ACA33480000A250 /* Build configuration list for PBXNativeTarget "PraShina" */ = {
+		0BBDD45D2ACA33480000A250 /* Build configuration list for PBXNativeTarget "companion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0BBDD45E2ACA33480000A250 /* Debug */,
