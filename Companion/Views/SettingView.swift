@@ -11,7 +11,7 @@ struct SettingView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var notificationOn: Bool = true
     @State private var darkMode: Bool = true
-
+    @Binding var name: String
     
     var body: some View {
         let contentColor: Color = colorScheme == .dark ? Color.white : Color.black
@@ -33,6 +33,8 @@ struct SettingView: View {
                 .frame(width: 343, height: 76)
                 .background(Color(red: 0.52, green: 0.51, blue: 0.51).opacity(0.3))
                 .cornerRadius(25)
+
+
             }
             .frame(width: 387, height: 93)
     
@@ -101,5 +103,5 @@ struct SettingView: View {
 }
 
 #Preview {
-    SettingView()
+    SettingView(name: .constant("Companion"))
 }

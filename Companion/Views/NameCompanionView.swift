@@ -10,7 +10,7 @@ import SwiftUI
 struct NameCompanionView: View {
     @Environment(\.colorScheme) var colorScheme
     @FocusState private var isFocused: Bool
-    @State private var text: String = ""
+    @State private var name: String = ""
     
     init() {
         self.isFocused = false
@@ -55,7 +55,7 @@ struct NameCompanionView: View {
             Button{
                 isFocused.toggle()
             } label: {
-                TextField("", text : $text)
+                TextField("", text : $name)
                     .focused($isFocused)
                     .border(colorScheme == .dark ? Color.white : Color.black)
                     .textFieldStyle(.roundedBorder)
@@ -63,6 +63,33 @@ struct NameCompanionView: View {
             }.offset(y:-40)
             
             }
+        
+        Button{
+            
+        }
+        label: {
+            NavigationLink(destination: ContentView(name: $name)){
+                ZStack{
+                    RoundedRectangle(cornerRadius: 40)
+                        .frame(width:280, height:55)
+                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        .opacity(0.2)
+                    
+                    HStack{
+                        Text("Next")
+                            .font(.system(size: 22))
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        
+                        Image(systemName: "arrow.right")
+                            .dynamicTypeSize(.xxLarge)
+                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .offset(x:35)
+                    }
+                }
+            }
+        }.offset(y:50)
         }
 }
 
