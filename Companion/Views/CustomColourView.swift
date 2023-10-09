@@ -57,6 +57,101 @@ struct CustomColourView: View {
                             .opacity(0.2)
 
                     }.frame(height: 230)
+                    
+                    VStack(spacing:20){
+                        HStack(spacing:45){
+                            Button(){
+                                
+                            } label: {
+                                Image(systemName: "nosign")
+                                    .font(.system(size: 30))
+                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            }
+                            
+                            Button(){
+                                
+                            } label: {
+                                Circle()
+                                    .frame(width:50)
+                            }
+                            
+                            Button(){
+                                
+                            } label: {
+                                Circle()
+                                    .frame(width:50)
+                            }
+                            
+                            Button(){
+                                
+                            } label: {
+                                Circle()
+                                    .frame(width:50)
+                            }
+                        }
+                        
+                        HStack(spacing:40){
+                            Button(){
+                                
+                            } label: {
+                                Circle()
+                                    .frame(width:50)
+                            }
+                            
+                            Button(){
+                                
+                            } label: {
+                                Circle()
+                                    .frame(width:50)
+                            }
+                            
+                            Button(){
+                                
+                            } label: {
+                                Circle()
+                                    .frame(width:50)
+                            }
+                            
+                            Button(){
+                                
+                            } label: {
+                                Circle()
+                                    .frame(width:50)
+                            }
+                        }
+                        
+                        HStack(spacing:40){
+                            Button(){
+                                
+                            } label: {
+                                Circle()
+                                    .frame(width:50)
+                            }
+                            
+                            Button(){
+                                
+                            } label: {
+                                Circle()
+                                    .frame(width:50)
+                            }
+                            
+                            Button(){
+                                
+                            } label: {
+                                Circle()
+                                    .frame(width:50)
+                            }
+                            
+                            Button(){
+                                
+                            } label: {
+                                Circle()
+                                    .frame(width:50)
+                            }
+                        }
+                        
+                    }
+                    
                                                     
                 }
             }.offset(y:-110)
