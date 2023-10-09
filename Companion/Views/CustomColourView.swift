@@ -47,6 +47,11 @@ struct CustomColourView: View {
                         
                         Button(){
                             isColourViewActive = false
+                            if imageName != "defaultDog" {
+                                imageName = "defaultDog"
+                            } else {
+                                imageName = "defaultDog"
+                            }
                         } label: {
                             ZStack{
                                 TopRoundedRectangle(cornerRadius: 20)
@@ -62,6 +67,11 @@ struct CustomColourView: View {
                     } else {
                         Button(){
                             isColourViewActive = true
+                            if imageName != "dogSmile" {
+                                imageName = "dogSmile"
+                            } else {
+                                imageName = "dogSmile"
+                            }
                         } label: {
                             ZStack{
                                 TopRoundedRectangle(cornerRadius: 20)
@@ -100,6 +110,7 @@ struct CustomColourView: View {
                             .opacity(0.2)
 
                     }.frame(height: 230)
+//                    CONTENT FOR CHANGING COLOUR
                     if isColourViewActive {
                         VStack(spacing:20){
                             HStack(spacing:45){
@@ -221,10 +232,10 @@ struct CustomColourView: View {
                         HStack(spacing: 40){
                             VStack(spacing:15){
                                 Button(){
-                                    if imageName != "dogSmile" {
-                                        imageName = "dogSmile"
+                                    if imageName != "defaultDog" {
+                                        imageName = "defaultDog"
                                     } else {
-                                        imageName = "dogSmile"
+                                        imageName = "defaultDog"
                                     }
                                     selectedButton = nil
                                 } label: {
@@ -287,6 +298,11 @@ struct CustomColourView: View {
                                 }
                                 Button(){
                                     selectedButton = 4
+                                    if imageName != "dogMous" {
+                                        imageName = "dogMous"
+                                    } else {
+                                        imageName = "dogMous"
+                                    }
                                 } label: {
                                     Image("blackMoustache")
                                         .resizable()
