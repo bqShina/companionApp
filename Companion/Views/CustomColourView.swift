@@ -72,6 +72,7 @@ struct CustomColourView: View {
                             } else {
                                 imageName = "dogSmile"
                             }
+                            selectedButton = nil
                         } label: {
                             ZStack{
                                 TopRoundedRectangle(cornerRadius: 20)
