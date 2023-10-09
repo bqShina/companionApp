@@ -19,7 +19,7 @@ struct ContentView: View {
     @State var selectedTab: Tabs = .home
     @State private var tabSelection = 1
     
-    @Binding var name: String
+//    @Binding var name: String
 
     var body: some View {
         
@@ -46,9 +46,9 @@ struct ContentView: View {
 //                    ChooseTaskView()
                     OnGoingTaskView()
                         .tag(2)
-                    Text("History")
+                    NameCompanionView()
                         .tag(3)
-                    SettingView(name: $name)
+                    SettingView()
                         .tag(4)
                 
   
@@ -67,5 +67,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(name: .constant("Companion"))
+    ContentView()
 }

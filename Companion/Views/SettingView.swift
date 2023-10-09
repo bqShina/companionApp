@@ -11,7 +11,20 @@ struct SettingView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var notificationOn: Bool = true
     @State private var darkMode: Bool = true
-    @Binding var name: String
+//    @Binding var name: String
+    @State private var savedName: String = ""
+    
+//    func loadNameFromUserDefaults() {
+//            if let savedUserName = UserDefaults.standard.string(forKey: "name") {
+//                savedName = savedUserName
+//            }
+//        }
+    
+    init() {
+            if let savedUserName = UserDefaults.standard.string(forKey: "name") {
+                savedName = savedUserName
+            }
+        }
     
     var body: some View {
         VStack(spacing: 30) {
@@ -23,7 +36,7 @@ struct SettingView: View {
             
             HStack(spacing: 80) {
                 Image("small_dog")
-                Text("\(name)")
+                Text("\(savedName)")
                     .font(.system(size: 18))
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
@@ -95,5 +108,5 @@ struct SettingView: View {
 }
 
 #Preview {
-    SettingView(name: .constant("Companion"))
+    SettingView()
 }
