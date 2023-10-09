@@ -27,7 +27,6 @@
 		D569AA822ACCDC14006961B9 /* ChooseYourCompanionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */; };
 		D569AA862ACD9982006961B9 /* ChooseTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA852ACD9982006961B9 /* ChooseTaskView.swift */; };
 		D57C735B2AD3BA9D000CB65A /* CustomColourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57C735A2AD3BA9D000CB65A /* CustomColourView.swift */; };
-		D57C735D2AD3C693000CB65A /* CustomDesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57C735C2AD3C693000CB65A /* CustomDesignView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +50,6 @@
 		D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseYourCompanionView.swift; sourceTree = "<group>"; };
 		D569AA852ACD9982006961B9 /* ChooseTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTaskView.swift; sourceTree = "<group>"; };
 		D57C735A2AD3BA9D000CB65A /* CustomColourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColourView.swift; sourceTree = "<group>"; };
-		D57C735C2AD3C693000CB65A /* CustomDesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDesignView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +80,6 @@
 				0B26062F2ACF943600E2B951 /* WelcomeVideoView.swift */,
 				0B93431D2AD36F48003FF623 /* HistoryView.swift */,
 				D57C735A2AD3BA9D000CB65A /* CustomColourView.swift */,
-				D57C735C2AD3C693000CB65A /* CustomDesignView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,7 +212,6 @@
 				D569AA862ACD9982006961B9 /* ChooseTaskView.swift in Sources */,
 				0B93431C2AD2B9B1003FF623 /* UnFinishedTaskView.swift in Sources */,
 				D5037E082ACF8BEF00675FC7 /* ActivateMovieTaskView.swift in Sources */,
-				D57C735D2AD3C693000CB65A /* CustomDesignView.swift in Sources */,
 				0B2606302ACF943600E2B951 /* WelcomeVideoView.swift in Sources */,
 				0B26062C2ACF7E1300E2B951 /* FinishedTaskView.swift in Sources */,
 				0B93431E2AD36F48003FF623 /* HistoryView.swift in Sources */,
