@@ -18,6 +18,7 @@ struct UnFinishedTaskView: View {
         
         VStack(spacing: 50) {
             Spacer()
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .navigationBarBackButtonHidden(true)
                 .toolbar(content: {
                        ToolbarItem (placement: .navigationBarLeading)  {
@@ -25,7 +26,7 @@ struct UnFinishedTaskView: View {
                            Button(action: {
                                presentationMode.wrappedValue.dismiss()
                            }, label: {
-                               HStack(alignment: .top, spacing: 100) {
+                               HStack(alignment: .top, spacing: 50) {
                                    
                                    Image(systemName: "arrowshape.turn.up.backward")
                                        .font(.system(size: 24))
