@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B2200DF2AD3853300FE7918 /* welcome.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0B2200DE2AD3853300FE7918 /* welcome.mov */; };
 		0B2200E12AD4F17500FE7918 /* DynamicIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2200E02AD4F17500FE7918 /* DynamicIslandView.swift */; };
+		0B2200E32AD4FBF900FE7918 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0B2200E22AD4FBF900FE7918 /* ConfettiSwiftUI */; };
 		0B26062C2ACF7E1300E2B951 /* FinishedTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B26062B2ACF7E1300E2B951 /* FinishedTaskView.swift */; };
 		0B26062E2ACF876E00E2B951 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B26062D2ACF876E00E2B951 /* CustomTabView.swift */; };
 		0B2606302ACF943600E2B951 /* WelcomeVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B26062F2ACF943600E2B951 /* WelcomeVideoView.swift */; };
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2200E32AD4FBF900FE7918 /* ConfettiSwiftUI in Frameworks */,
 				0B55522D2ACE58D100DCB7C2 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +169,7 @@
 			name = companion;
 			packageProductDependencies = (
 				0B55522C2ACE58D100DCB7C2 /* ConfettiSwiftUI */,
+				0B2200E22AD4FBF900FE7918 /* ConfettiSwiftUI */,
 			);
 			productName = PraShina;
 			productReference = 0BBDD44F2ACA33470000A250 /* companion.app */;
@@ -465,6 +468,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0B2200E22AD4FBF900FE7918 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B55522B2ACE58D100DCB7C2 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
 		0B55522C2ACE58D100DCB7C2 /* ConfettiSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0B55522B2ACE58D100DCB7C2 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;

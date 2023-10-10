@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct CompanionApp: App {
+    @StateObject private var eventStore = EventStore()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(eventStore)
         }
     }
 }

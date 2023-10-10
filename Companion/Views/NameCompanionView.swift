@@ -50,7 +50,7 @@ struct NameCompanionView: View {
 //            .zIndex(10)
                 
             Text("Please input the name you choose")
-                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                .foregroundColor(contentColor)
                 .font(.system(size:20, weight: .semibold))
                 .offset(y:-180)
                 
@@ -59,7 +59,7 @@ struct NameCompanionView: View {
             } label: {
                 TextField("", text : $name)
                     .focused($isFocused)
-                    .border(colorScheme == .dark ? Color.white : Color.black)
+                    .border(contentColor)
                         .textFieldStyle(.roundedBorder)
                         .frame(width:200)
             }.offset(y:-190)
@@ -75,7 +75,7 @@ struct NameCompanionView: View {
                 ZStack{
                     RoundedRectangle(cornerRadius: 40)
                         .frame(width:280, height:55)
-                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                        .foregroundColor(contentColor)
                         .opacity(0.2)
                         
                     HStack{
@@ -83,11 +83,11 @@ struct NameCompanionView: View {
                             .font(.system(size: 22))
                             .fontWeight(.semibold)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .foregroundColor(contentColor)
                             
                         Image(systemName: "arrow.right")
                             .dynamicTypeSize(.xxLarge)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .foregroundColor(contentColor)
                             .offset(x:35)
                     }
                 }
