@@ -9,23 +9,27 @@ import Foundation
 
 struct Event: Identifiable {
     enum EventType: String, Identifiable, CaseIterable {
-        case work, home, social, sport, unspecified
+        case finished, unfinished, work, home, social, sport, unspecified
         var id: String {
             self.rawValue
         }
 
         var icon: String {
             switch self {
-            case .work:
-                return "🏦"
-            case .home:
-                return "🏡"
+            case .finished:
+                return "✅"
+            case .unfinished:
+                return "❌"
             case .social:
                 return "🎉"
             case .sport:
                 return "🏟"
             case .unspecified:
                 return "📌"
+            case .work:
+                return "🏟"
+            case .home:
+                return "🏟"
             }
         }
     }
@@ -58,13 +62,13 @@ struct Event: Identifiable {
     // Data to be used in the preview
     static var sampleEvents: [Event] {
         return [
-            Event(eventType: .home, date: Date().diff(numDays: 0), note: "Take dog to groomers"),
-            Event(date: Date().diff(numDays: -1), note: "Get gift for Emily"),
-            Event(eventType: .home, date: Date().diff(numDays: 6), note: "File tax returns."),
-            Event(eventType: .social, date: Date().diff(numDays: 2), note: "Dinner party at Dave and Janet's"),
-            Event(eventType: .work, date: Date().diff(numDays: -1), note: "Complete Audit."),
-            Event(eventType: .sport, date: Date().diff(numDays: -3), note: "Football Game"),
-            Event(date: Date().diff(numDays: -4), note: "Plan for winter vacation.")
+            Event(eventType: .finished, date: Date().diff(numDays: 0), note: "Take dog to groomers"),
+//            Event(date: Date().diff(numDays: -1), note: "Get gift for Emily"),
+            Event(eventType: .finished, date: Date().diff(numDays: -6), note: "File tax returns."),
+            Event(eventType: .finished, date: Date().diff(numDays: -2), note: "Dinner party at Dave and Janet's"),
+            Event(eventType: .unfinished, date: Date().diff(numDays: -1), note: "Complete Audit."),
+            Event(eventType: .unfinished, date: Date().diff(numDays: -3), note: "Football Game"),
+            Event(eventType: .finished,date: Date().diff(numDays: -4), note: "Plan for winter vacation.")
         ]
     }
 }
