@@ -29,6 +29,7 @@
 		D57C735B2AD3BA9D000CB65A /* CustomColourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57C735A2AD3BA9D000CB65A /* CustomColourView.swift */; };
 		D5DB5F252AD4E44B00A0900F /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F242AD4E44B00A0900F /* EventStore.swift */; };
 		D5DB5F272AD4E45600A0900F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F262AD4E45600A0900F /* Event.swift */; };
+		D5DB5F322AD4F3C300A0900F /* DaysHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F312AD4F3C300A0900F /* DaysHistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		D57C735E2AD4CFE4000CB65A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = companion/Info.plist; sourceTree = "<group>"; };
 		D5DB5F242AD4E44B00A0900F /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
 		D5DB5F262AD4E45600A0900F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D5DB5F312AD4F3C300A0900F /* DaysHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysHistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				D5037E052ACF7EA700675FC7 /* ActivateTaskView.swift */,
 				0B26062F2ACF943600E2B951 /* WelcomeVideoView.swift */,
 				0B93431D2AD36F48003FF623 /* HistoryView.swift */,
+				D5DB5F312AD4F3C300A0900F /* DaysHistoryView.swift */,
 				D57C735A2AD3BA9D000CB65A /* CustomColourView.swift */,
 				0B2200E02AD4F17500FE7918 /* DynamicIslandView.swift */,
 			);
@@ -238,6 +241,7 @@
 				D57C735B2AD3BA9D000CB65A /* CustomColourView.swift in Sources */,
 				0B9343202AD37BFE003FF623 /* NameCompanionView.swift in Sources */,
 				0B26062E2ACF876E00E2B951 /* CustomTabView.swift in Sources */,
+				D5DB5F322AD4F3C300A0900F /* DaysHistoryView.swift in Sources */,
 				0B2200E12AD4F17500FE7918 /* DynamicIslandView.swift in Sources */,
 				D569AA802ACCDBE4006961B9 /* HomePageView.swift in Sources */,
 				D569AA822ACCDC14006961B9 /* ChooseYourCompanionView.swift in Sources */,
