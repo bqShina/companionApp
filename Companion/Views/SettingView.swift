@@ -107,6 +107,7 @@ struct SettingView: View {
             
             
         }
+        .navigationBarBackButtonHidden(true)
         .padding(.horizontal)
         .onAppear {
             loadNameFromUserDefaults()
