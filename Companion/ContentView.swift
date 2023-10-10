@@ -93,4 +93,5 @@ struct TabViewCustom: View {
 
 #Preview {
     ContentView()
+        .environmentObject(EventStore(preview: true))
 }

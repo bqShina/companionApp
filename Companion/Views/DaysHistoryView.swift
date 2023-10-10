@@ -10,6 +10,7 @@ import SwiftUI
 struct DaysHistoryView: View {
     @EnvironmentObject var eventStore: EventStore
     @Binding var dateSelected: DateComponents?
+    @State private var formType: EventFormType?
     
     var body: some View {
         Group {
@@ -18,7 +19,7 @@ struct DaysHistoryView: View {
                     .filter {$0.date.startOfDay == dateSelected.date!.startOfDay}
                 List {
                     ForEach(foundEvents) { event in
-//                        ListViewRow(event: event, formType: $formType)
+                        ListViewRow(event: event, formType: $formType)
 //                            .swipeActions {
 //                                Button(role: .destructive) {
 //                                    eventStore.delete(event)
@@ -26,7 +27,7 @@ struct DaysHistoryView: View {
 //                                    Image(systemName: "trash")
 //                                }
 //                            }
-//                            .sheet(item: $formType) { $0 }
+                            .sheet(item: $formType) { $0 }
                     }
                 }
             }
