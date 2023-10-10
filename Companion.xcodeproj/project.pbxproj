@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B2200DF2AD3853300FE7918 /* welcome.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0B2200DE2AD3853300FE7918 /* welcome.mov */; };
+		0B2200E12AD4F17500FE7918 /* DynamicIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2200E02AD4F17500FE7918 /* DynamicIslandView.swift */; };
 		0B26062C2ACF7E1300E2B951 /* FinishedTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B26062B2ACF7E1300E2B951 /* FinishedTaskView.swift */; };
 		0B26062E2ACF876E00E2B951 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B26062D2ACF876E00E2B951 /* CustomTabView.swift */; };
 		0B2606302ACF943600E2B951 /* WelcomeVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B26062F2ACF943600E2B951 /* WelcomeVideoView.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		0B2200DE2AD3853300FE7918 /* welcome.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = welcome.mov; path = Companion/welcome.mov; sourceTree = SOURCE_ROOT; };
+		0B2200E02AD4F17500FE7918 /* DynamicIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandView.swift; sourceTree = "<group>"; };
 		0B26062B2ACF7E1300E2B951 /* FinishedTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedTaskView.swift; sourceTree = "<group>"; };
 		0B26062D2ACF876E00E2B951 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		0B26062F2ACF943600E2B951 /* WelcomeVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVideoView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				0B26062F2ACF943600E2B951 /* WelcomeVideoView.swift */,
 				0B93431D2AD36F48003FF623 /* HistoryView.swift */,
 				D57C735A2AD3BA9D000CB65A /* CustomColourView.swift */,
+				0B2200E02AD4F17500FE7918 /* DynamicIslandView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				D57C735B2AD3BA9D000CB65A /* CustomColourView.swift in Sources */,
 				0B9343202AD37BFE003FF623 /* NameCompanionView.swift in Sources */,
 				0B26062E2ACF876E00E2B951 /* CustomTabView.swift in Sources */,
+				0B2200E12AD4F17500FE7918 /* DynamicIslandView.swift in Sources */,
 				D569AA802ACCDBE4006961B9 /* HomePageView.swift in Sources */,
 				D569AA822ACCDC14006961B9 /* ChooseYourCompanionView.swift in Sources */,
 			);

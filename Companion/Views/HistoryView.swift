@@ -10,7 +10,7 @@ import UIKit
 
 struct HistoryView: View {
     @Environment(\.colorScheme) var colorScheme
-    @EnvironmentObject var eventStore: EventS
+//    @EnvironmentObject var eventStore: EventS
     
     var body: some View {
         let contentColor: Color = colorScheme == .dark ? Color.white : Color.black
@@ -35,7 +35,7 @@ struct HistoryView: View {
             }
             .frame(width: 387, height: 93)
             
-            CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture), eventStore: eventStore)
+            CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture))
 //                .padding(.horizontal)
         }
     }
@@ -51,7 +51,7 @@ struct HistoryView: View {
 
 struct CalendarView: UIViewRepresentable {
     let interval: DateInterval
-    @ObservedObject var eventStore: EventStore
+//    @ObservedObject var eventStore: EventStore
     func makeUIView(context: Context) -> UICalendarView {
         let view = UICalendarView()
         view.calendar = Calendar(identifier: .gregorian)
