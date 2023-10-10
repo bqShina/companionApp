@@ -20,13 +20,13 @@ struct DaysHistoryView: View {
                 List {
                     ForEach(foundEvents) { event in
                         ListViewRow(event: event, formType: $formType)
-                            .swipeActions {
-                                Button(role: .destructive) {
-                                    eventStore.delete(event)
-                                } label: {
-                                    Image(systemName: "trash")
-                                }
-                            }
+//                            .swipeActions {
+//                                Button(role: .destructive) {
+//                                    eventStore.delete(event)
+//                                } label: {
+//                                    Image(systemName: "trash")
+//                                }
+//                            }
                             .sheet(item: $formType) { $0 }
                     }
                 }
