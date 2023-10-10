@@ -48,6 +48,7 @@
 		D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseYourCompanionView.swift; sourceTree = "<group>"; };
 		D569AA852ACD9982006961B9 /* ChooseTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTaskView.swift; sourceTree = "<group>"; };
 		D57C735A2AD3BA9D000CB65A /* CustomColourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColourView.swift; sourceTree = "<group>"; };
+		D57C735E2AD4CFE4000CB65A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = companion/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +94,7 @@
 		0BBDD4462ACA33470000A250 = {
 			isa = PBXGroup;
 			children = (
+				D57C735E2AD4CFE4000CB65A /* Info.plist */,
 				0BBDD4512ACA33470000A250 /* Companion */,
 				0BBDD4502ACA33470000A250 /* Products */,
 			);
@@ -355,6 +357,7 @@
 				DEVELOPMENT_TEAM = Y56U5X7F52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = companion/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -384,6 +387,7 @@
 				DEVELOPMENT_TEAM = Y56U5X7F52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = companion/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
