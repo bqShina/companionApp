@@ -10,8 +10,9 @@ import UIKit
 
 struct HistoryView: View {
     @Environment(\.colorScheme) var colorScheme
-
     @EnvironmentObject var eventStore: EventStore
+    @State private var dateSelected: DateComponents?
+    @State private var displayEvents = false
 
     
     var body: some View {
@@ -38,9 +39,11 @@ struct HistoryView: View {
             .frame(width: 387, height: 93)
             
 
-            
-            CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture), eventStore: eventStore)
-
+            CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture), eventStore: eventStore, dateSelected: $dateSelected, displayEvents: $displayEvents)
+                .sheet(isPresented: $displayEvents) {
+                    DaysHistoryView(dateSelected: $dateSelected)
+                        .presentationDetents([.medium, .large])
+                }
 //                .padding(.horizontal)
         }
     }
@@ -57,10 +60,11 @@ struct HistoryView: View {
 
 struct CalendarView: UIViewRepresentable {
     
-    
     let interval: DateInterval
 
     @ObservedObject var eventStore: EventStore
+    @Binding var dateSelected: DateComponents?
+    @Binding var displayEvents: Bool
     
 
     func makeUIView(context: Context) -> UICalendarView {
@@ -68,6 +72,8 @@ struct CalendarView: UIViewRepresentable {
         view.delegate = context.coordinator
         view.calendar = Calendar(identifier: .gregorian)
         view.availableDateRange = interval
+        let dateSelection = UICalendarSelectionSingleDate(delegate: context.coordinator)
+        view.selectionBehavior = dateSelection
         return view
     }
     
@@ -79,7 +85,9 @@ struct CalendarView: UIViewRepresentable {
         
     }
         
-    class Coordinator: NSObject, UICalendarViewDelegate {
+    class Coordinator: NSObject, UICalendarViewDelegate, UICalendarSelectionSingleDateDelegate {
+        
+        
         var parent: CalendarView
         @ObservedObject var eventStore: EventStore
         init(parent: CalendarView, eventStore: ObservedObject<EventStore>) {
@@ -105,6 +113,21 @@ struct CalendarView: UIViewRepresentable {
                 icon.text = singleEvent.eventType.icon
                 return icon
             }
+        }
+        
+        func dateSelection(_ selection: UICalendarSelectionSingleDate, didSelectDate dateComponents: DateComponents?) {
+            parent.dateSelected = dateComponents
+            guard let dateComponents else { return }
+            let foundEvents = eventStore.events
+                .filter {$0.date.startOfDay == dateComponents.date?.startOfDay}
+            if !foundEvents.isEmpty {
+                parent.displayEvents.toggle()
+            }
+            
+        }
+        
+        func dateSelection(_ selection: UICalendarSelectionSingleDate, canSelectDate dateComponents: DateComponents?) -> Bool {
+            return true
         }
     }
     
