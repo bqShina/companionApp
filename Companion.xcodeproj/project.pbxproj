@@ -31,6 +31,10 @@
 		D5DB5F252AD4E44B00A0900F /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F242AD4E44B00A0900F /* EventStore.swift */; };
 		D5DB5F272AD4E45600A0900F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F262AD4E45600A0900F /* Event.swift */; };
 		D5DB5F322AD4F3C300A0900F /* DaysHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F312AD4F3C300A0900F /* DaysHistoryView.swift */; };
+		D5DB5F352AD4FF2500A0900F /* EventFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F342AD4FF2500A0900F /* EventFormViewModel.swift */; };
+		D5DB5F372AD4FF4500A0900F /* EventFormType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F362AD4FF4500A0900F /* EventFormType.swift */; };
+		D5DB5F392AD4FF7200A0900F /* EventFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F382AD4FF7200A0900F /* EventFormView.swift */; };
+		D5DB5F3B2AD4FFD600A0900F /* ListViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F3A2AD4FFD600A0900F /* ListViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		D5DB5F242AD4E44B00A0900F /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
 		D5DB5F262AD4E45600A0900F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D5DB5F312AD4F3C300A0900F /* DaysHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysHistoryView.swift; sourceTree = "<group>"; };
+		D5DB5F342AD4FF2500A0900F /* EventFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFormViewModel.swift; sourceTree = "<group>"; };
+		D5DB5F362AD4FF4500A0900F /* EventFormType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFormType.swift; sourceTree = "<group>"; };
+		D5DB5F382AD4FF7200A0900F /* EventFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFormView.swift; sourceTree = "<group>"; };
+		D5DB5F3A2AD4FFD600A0900F /* ListViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,7 @@
 		0BBDD4512ACA33470000A250 /* Companion */ = {
 			isa = PBXGroup;
 			children = (
+				D5DB5F332AD4FF1000A0900F /* EditUpdateView */,
 				D5DB5F232AD4E3C300A0900F /* Models */,
 				0B5552282ACE3A6600DCB7C2 /* Views */,
 				0BBDD4522ACA33470000A250 /* CompanionApp.swift */,
@@ -149,6 +158,17 @@
 				D5DB5F262AD4E45600A0900F /* Event.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D5DB5F332AD4FF1000A0900F /* EditUpdateView */ = {
+			isa = PBXGroup;
+			children = (
+				D5DB5F342AD4FF2500A0900F /* EventFormViewModel.swift */,
+				D5DB5F362AD4FF4500A0900F /* EventFormType.swift */,
+				D5DB5F382AD4FF7200A0900F /* EventFormView.swift */,
+				D5DB5F3A2AD4FFD600A0900F /* ListViewRow.swift */,
+			);
+			path = EditUpdateView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,13 +258,17 @@
 				0B93431E2AD36F48003FF623 /* HistoryView.swift in Sources */,
 				0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */,
 				D5DB5F272AD4E45600A0900F /* Event.swift in Sources */,
+				D5DB5F352AD4FF2500A0900F /* EventFormViewModel.swift in Sources */,
 				0BBDD4552ACA33470000A250 /* ContentView.swift in Sources */,
 				0BBDD4532ACA33470000A250 /* CompanionApp.swift in Sources */,
 				D5DB5F252AD4E44B00A0900F /* EventStore.swift in Sources */,
 				D57C735B2AD3BA9D000CB65A /* CustomColourView.swift in Sources */,
+				D5DB5F372AD4FF4500A0900F /* EventFormType.swift in Sources */,
+				D5DB5F392AD4FF7200A0900F /* EventFormView.swift in Sources */,
 				0B9343202AD37BFE003FF623 /* NameCompanionView.swift in Sources */,
 				0B26062E2ACF876E00E2B951 /* CustomTabView.swift in Sources */,
 				D5DB5F322AD4F3C300A0900F /* DaysHistoryView.swift in Sources */,
+				D5DB5F3B2AD4FFD600A0900F /* ListViewRow.swift in Sources */,
 				0B2200E12AD4F17500FE7918 /* DynamicIslandView.swift in Sources */,
 				D569AA802ACCDBE4006961B9 /* HomePageView.swift in Sources */,
 				D569AA822ACCDC14006961B9 /* ChooseYourCompanionView.swift in Sources */,

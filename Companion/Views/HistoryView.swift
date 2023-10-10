@@ -38,13 +38,18 @@ struct HistoryView: View {
             }
             .frame(width: 387, height: 93)
             
-
-            CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture), eventStore: eventStore, dateSelected: $dateSelected, displayEvents: $displayEvents)
-                .sheet(isPresented: $displayEvents) {
-                    DaysHistoryView(dateSelected: $dateSelected)
-                        .presentationDetents([.medium, .large])
-                }
-//                .padding(.horizontal)
+            ScrollView{
+                CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture), 
+                             eventStore: eventStore,
+                             dateSelected: $dateSelected, 
+                             displayEvents: $displayEvents)
+    //                .padding(.horizontal)
+            }
+            .sheet(isPresented: $displayEvents) {
+                DaysHistoryView(dateSelected: $dateSelected)
+                    .presentationDetents([.medium, .large])
+            }
+            
         }
     }
 }
