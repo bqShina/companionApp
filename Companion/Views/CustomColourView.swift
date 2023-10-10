@@ -24,6 +24,7 @@ struct CustomColourView: View {
             Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+//                .scaledToFit()
                 .frame(width: 370, height: 500)
             
             VStack (spacing:0){
