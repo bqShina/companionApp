@@ -10,7 +10,7 @@ import UIKit
 
 struct HistoryView: View {
     @Environment(\.colorScheme) var colorScheme
-    @EnvironmentObject var eventStore: EventS
+    @EnvironmentObject var eventStore: EventStore
     
     var body: some View {
         let contentColor: Color = colorScheme == .dark ? Color.white : Color.black
@@ -35,6 +35,7 @@ struct HistoryView: View {
             }
             .frame(width: 387, height: 93)
             
+            
             CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture), eventStore: eventStore)
 //                .padding(.horizontal)
         }
@@ -43,6 +44,7 @@ struct HistoryView: View {
 
 #Preview {
     HistoryView()
+        .environmentObject(EventStore(preview: true))
 }
 
 
@@ -50,16 +52,64 @@ struct HistoryView: View {
 
 
 struct CalendarView: UIViewRepresentable {
+    
+    
     let interval: DateInterval
     @ObservedObject var eventStore: EventStore
+    
     func makeUIView(context: Context) -> UICalendarView {
         let view = UICalendarView()
+        view.delegate = context.coordinator
         view.calendar = Calendar(identifier: .gregorian)
         view.availableDateRange = interval
         return view
     }
     
-    func updateUIView(_ uiView: UICalendarView, context: Context) {
+    func makeCoordinator() -> Coordinator {
+        Coordinator(parent: self, eventStore: _eventStore)
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
         
+    }
+        
+    class Coordinator: NSObject, UICalendarViewDelegate {
+        var parent: CalendarView
+        @ObservedObject var eventStore: EventStore
+        init(parent: CalendarView, eventStore: ObservedObject<EventStore>) {
+            self.parent = parent
+            self._eventStore = eventStore
+        }
+        
+        @MainActor
+        func calendarView(_ calendarView: UICalendarView, decorationFor dateComponents: DateComponents) -> UICalendarView.Decoration? {
+            
+            let foundEvents = eventStore.events
+                .filter {$0.date.startOfDay == dateComponents.date?.startOfDay}
+            if foundEvents.isEmpty { return nil }
+            
+//            if foundEvents.count > 1 {
+//                return .image(UIImage(systemName: "doc.on.doc.fill"),
+//                              color: .red,
+//                              size: .large)
+//            }
+            let singleEvent = foundEvents.first!
+            return .customView {
+                let icon = UILabel()
+                icon.text = singleEvent.eventType.icon
+                return icon
+            }
+        }
+    }
+    
+}
+
+extension Date {
+    func diff(numDays: Int) -> Date {
+        Calendar.current.date(byAdding: .day, value: numDays, to: self)!
+    }
+    
+    var startOfDay: Date {
+        Calendar.current.startOfDay(for: self)
     }
 }

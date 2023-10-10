@@ -26,6 +26,8 @@
 		D569AA822ACCDC14006961B9 /* ChooseYourCompanionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */; };
 		D569AA862ACD9982006961B9 /* ChooseTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA852ACD9982006961B9 /* ChooseTaskView.swift */; };
 		D57C735B2AD3BA9D000CB65A /* CustomColourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57C735A2AD3BA9D000CB65A /* CustomColourView.swift */; };
+		D5DB5F252AD4E44B00A0900F /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F242AD4E44B00A0900F /* EventStore.swift */; };
+		D5DB5F272AD4E45600A0900F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F262AD4E45600A0900F /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		D569AA852ACD9982006961B9 /* ChooseTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTaskView.swift; sourceTree = "<group>"; };
 		D57C735A2AD3BA9D000CB65A /* CustomColourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColourView.swift; sourceTree = "<group>"; };
 		D57C735E2AD4CFE4000CB65A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = companion/Info.plist; sourceTree = "<group>"; };
+		D5DB5F242AD4E44B00A0900F /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
+		D5DB5F262AD4E45600A0900F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		0BBDD4512ACA33470000A250 /* Companion */ = {
 			isa = PBXGroup;
 			children = (
+				D5DB5F232AD4E3C300A0900F /* Models */,
 				0B5552282ACE3A6600DCB7C2 /* Views */,
 				0BBDD4522ACA33470000A250 /* CompanionApp.swift */,
 				0BBDD4542ACA33470000A250 /* ContentView.swift */,
@@ -127,6 +132,15 @@
 				0BBDD4592ACA33480000A250 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5DB5F232AD4E3C300A0900F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5DB5F242AD4E44B00A0900F /* EventStore.swift */,
+				D5DB5F262AD4E45600A0900F /* Event.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +228,10 @@
 				0B26062C2ACF7E1300E2B951 /* FinishedTaskView.swift in Sources */,
 				0B93431E2AD36F48003FF623 /* HistoryView.swift in Sources */,
 				0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */,
+				D5DB5F272AD4E45600A0900F /* Event.swift in Sources */,
 				0BBDD4552ACA33470000A250 /* ContentView.swift in Sources */,
 				0BBDD4532ACA33470000A250 /* CompanionApp.swift in Sources */,
+				D5DB5F252AD4E44B00A0900F /* EventStore.swift in Sources */,
 				D57C735B2AD3BA9D000CB65A /* CustomColourView.swift in Sources */,
 				0B9343202AD37BFE003FF623 /* NameCompanionView.swift in Sources */,
 				0B26062E2ACF876E00E2B951 /* CustomTabView.swift in Sources */,
