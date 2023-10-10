@@ -37,22 +37,25 @@ struct ContentView: View {
                     .disabled(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             } else {
                 
-                TabView(selection: $tabSelection) {
+                TabViewCustom(selectedTab: $selectedTab, tabSelection: $tabSelection)
                     
-                    HomePageView()
-                        .tag(1)
-                    ChooseTaskView()
-                        .tag(2)
-                    HistoryView()
-                        .tag(3)
-                    SettingView()
-                        .tag(4)
                 
-  
-                }
-                .overlay(alignment: .bottom) {
-                    CustomTabView(tabSelection: $tabSelection)
-                }
+//                TabView(selection: $tabSelection) {
+//                    
+//                    HomePageView()
+//                        .tag(1)
+//                    ChooseTaskView()
+//                        .tag(2)
+//                    HistoryView()
+//                        .tag(3)
+//                    SettingView()
+//                        .tag(4)
+//                
+//  
+//                }
+//                .overlay(alignment: .bottom) {
+//                    CustomTabView(tabSelection: $tabSelection)
+//                }
 
             }
         }
@@ -61,6 +64,31 @@ struct ContentView: View {
         
     }
     
+}
+
+struct TabViewCustom: View {
+    @Binding var selectedTab: Tabs
+    @Binding var tabSelection : Int
+    
+    var body: some View {
+        TabView(selection: $tabSelection) {
+            
+            HomePageView()
+                .tag(1)
+            ChooseTaskView()
+                .tag(2)
+            HistoryView()
+                .tag(3)
+            SettingView()
+                .tag(4)
+        
+
+        }
+        .overlay(alignment: .bottom) {
+            CustomTabView(tabSelection: $tabSelection)
+        }
+        .navigationBarBackButtonHidden(true) 
+    }
 }
 
 #Preview {

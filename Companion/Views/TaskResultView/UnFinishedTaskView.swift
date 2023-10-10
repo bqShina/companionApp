@@ -11,6 +11,7 @@ import ConfettiSwiftUI
 struct UnFinishedTaskView: View {
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.presentationMode) private var presentationMode
+    
     @State private var counter = 0
     
     var body: some View {
