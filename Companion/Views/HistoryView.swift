@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct HistoryView: View {
     @Environment(\.colorScheme) var colorScheme
@@ -42,6 +43,10 @@ struct HistoryView: View {
 #Preview {
     HistoryView()
 }
+
+
+
+
 
 struct CalendarView: UIViewRepresentable {
     let interval: DateInterval

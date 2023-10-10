@@ -12,32 +12,12 @@ struct ChooseTaskView: View {
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     @Environment(\.dismiss) private var dismiss
     
+    @State private var tasks: [String] = ["Listen to some music 🎵", "Binge your favourite movie 🎬", "Sing and dance to a song 🎶", "Running for 1 hour 🏃"]
+    
     var body: some View {
+        let contentColor: Color = colorScheme == .dark ? Color.white : Color.black
+        
         VStack{
-//            HStack{
-//                Text("")
-//                    .navigationBarBackButtonHidden(true)
-//                    .toolbar {                                    ToolbarItem(placement: .navigationBarLeading) {
-//                        
-//                        Button {
-//                            presentationMode.wrappedValue.dismiss()
-//                            dismiss()
-//                        } label: {
-//                            HStack {
-//                                Image(systemName: "arrowshape.turn.up.left")
-//                                    .dynamicTypeSize(.xxxLarge)
-//                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-//                                    .offset(x:23, y:20)
-//                                
-//                                Text("Companion")
-//                                    .font(.system(size: 30))
-//                                    .fontWeight(.heavy)
-//                                    .offset(x:53, y:20)
-//                            }
-//                        }
-//                    }
-//                    }
-//            }
             
             Image("dog")
                 .offset(y:-25)
@@ -46,63 +26,12 @@ struct ChooseTaskView: View {
                 .font(.system(size: 24))
                 .fontWeight(.semibold)
             
-            Button{
+        SingleTaskButtonView(contentColor: contentColor, task: tasks[0])
+        SingleTaskButtonView(contentColor: contentColor, task: tasks[1])
                 
-            }
-            label: {
-                NavigationLink(destination: ActivateMusicTaskView()){
-                    ZStack{
-                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                            .frame(width:331, height:85)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                            .opacity(0.2)
-                        
-                        HStack{
-                            Text("Listen to some music")
-                                .font(.system(size: 20))
-                                .fontWeight(.semibold)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                            
-                            Image(systemName: "arrow.right")
-                                .dynamicTypeSize(.xxLarge)
-                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                        }
-                    }
-                }
-            }
-            
-            
-            
             
             Button{
-                
-            }
-            label: {
-                NavigationLink(destination: ActivateMovieTaskView()){
-                    ZStack{
-                        RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                            .frame(width:331, height:85)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                            .opacity(0.2)
-                        
-                        HStack{
-                            Text("Binge your favourite movie")
-                                .font(.system(size: 20))
-                                .fontWeight(.semibold)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                            
-                            Image(systemName: "arrow.right")
-                                .dynamicTypeSize(.xxLarge)
-                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                        }
-                    }
-                }
-            }
-            
-            Button{
-                
+                tasks.shuffle()
             }
             label: {
                 HStack{
@@ -120,4 +49,32 @@ struct ChooseTaskView: View {
 
 #Preview {
     ChooseTaskView()
+}
+
+struct SingleTaskButtonView: View {
+    let contentColor: Color
+    let task: String
+    
+    var body: some View {
+        NavigationLink(destination: ActivateTaskView(task: task)){
+            ZStack{
+                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                    .frame(width:331, height:85)
+                    .foregroundColor(contentColor)
+                    .opacity(0.2)
+                
+                HStack{
+                    Text(task)
+                        .font(.system(size: 20))
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(contentColor)
+                    
+                    Image(systemName: "arrow.right")
+                        .dynamicTypeSize(.xxLarge)
+                        .foregroundColor(contentColor)
+                }
+            }
+        }
+    }
 }

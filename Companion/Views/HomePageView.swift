@@ -91,17 +91,6 @@ struct HomePageView: View {
                 
             }label: {
                 ZStack{
-//                    LinearGradient(
-//                        gradient: .init(colors: [Color.white, Color.blue.opacity(0.66)]),
-//                        startPoint: .init(x: 0.0, y: 0.0),
-//                        endPoint: .init(x: 0.75, y: 0.75)
-//                    )
-//                    .mask(
-//                        RoundedRectangle(cornerRadius: 15)
-//                            .frame(width: 120, height: 45, alignment: .center)
-//                            .blur(radius: 10)
-//                    )
-//                    .padding(.top, 20)
                     Button(action: {}, label: {
                         NavigationLink(destination: CustomColourView()){
                             Label("Customize", systemImage:"pencil.circle")

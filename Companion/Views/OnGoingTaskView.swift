@@ -9,15 +9,13 @@ import SwiftUI
 
 struct OnGoingTaskView: View {
     @Environment(\.colorScheme) var colorScheme
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    let task: String
 
-    
     var body: some View {
+        let contentColor: Color = colorScheme == .dark ? Color.white : Color.black
         ScrollView(.vertical){
-                VStack {
-                    Text("Companion")
-                        .font(.system(size: 30))
-                        .fontWeight(.heavy)
-                        .offset(y:20)
+            CustomNavigationBar(presentationMode: presentationMode, contentColor: contentColor, spacingNum: 80, title: "Companion")
                     
                     Image("dog")
                         .offset(y:20)
@@ -34,7 +32,7 @@ struct OnGoingTaskView: View {
                             .opacity(0.2)
                             .offset(y:35)
                         
-                        Text("Sing and dance to a song 🎶")
+                        Text(task)
                             .font(.system(size: 24))
                             .fontWeight(.semibold)
                             .multilineTextAlignment(.center)
@@ -48,17 +46,17 @@ struct OnGoingTaskView: View {
                         .fontWeight(.regular)
                         .offset(y:35)
                     
-                    HStack(spacing: 30){
+                    HStack(spacing: 60){
                         
                         NavigationLink(destination: UnFinishedTaskView()) {
                             Image(systemName: "multiply.circle")
-                                .font(.system(size: 26))
+                                .font(.system(size: 35))
                                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                         }.offset(y:35)
                         
                         NavigationLink(destination: FinishTaskView()) {
                             Image(systemName: "checkmark.circle")
-                                .font(.system(size: 26))
+                                .font(.system(size: 35))
                                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                         }.offset(y:35)
                     }
@@ -69,8 +67,8 @@ struct OnGoingTaskView: View {
         
                     
     }
-}
+
 
 #Preview {
-    OnGoingTaskView()
+    OnGoingTaskView(task: "Sing and dance to a song 🎶")
 }

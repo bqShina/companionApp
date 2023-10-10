@@ -32,7 +32,9 @@ struct NameCompanionView: View {
     var body: some View {
         let contentColor: Color = colorScheme == .dark ? Color.white : Color.black
         VStack(spacing: 50) {
-            CustomNavigationBar(presentationMode: presentationMode, contentColor: contentColor, spacingNum: 30, title: "Name Your Companion")
+//            CustomNavigationBar(presentationMode: presentationMode, contentColor: contentColor, spacingNum: 30, title: "Name Your Companion")
+//                .zIndex(1)
+                
                 
             Button {
                 isFocused.toggle()
@@ -45,6 +47,7 @@ struct NameCompanionView: View {
             .foregroundStyle(.tint)
             .multilineTextAlignment(.center)
             .offset(y:-140)
+//            .zIndex(10)
                 
             Text("Please input the name you choose")
                 .foregroundColor(colorScheme == .dark ? Color.white : Color.black)

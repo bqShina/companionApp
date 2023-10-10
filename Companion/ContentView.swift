@@ -41,10 +41,8 @@ struct ContentView: View {
                     
                     HomePageView()
                         .tag(1)
-//                    ChooseTaskView()
-                    OnGoingTaskView()
+                    ChooseTaskView()
                         .tag(2)
-//                    NameCompanionView()
                     HistoryView()
                         .tag(3)
                     SettingView()

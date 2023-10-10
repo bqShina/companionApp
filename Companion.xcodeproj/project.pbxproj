@@ -21,8 +21,7 @@
 		0BBDD45A2ACA33480000A250 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BBDD4592ACA33480000A250 /* Preview Assets.xcassets */; };
 		0BBDD4612ACA65870000A250 /* OnGoingTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4602ACA65870000A250 /* OnGoingTaskView.swift */; };
 		0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBDD4642ACBAC760000A250 /* SettingView.swift */; };
-		D5037E062ACF7EA700675FC7 /* ActivateMusicTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5037E052ACF7EA700675FC7 /* ActivateMusicTaskView.swift */; };
-		D5037E082ACF8BEF00675FC7 /* ActivateMovieTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5037E072ACF8BEF00675FC7 /* ActivateMovieTaskView.swift */; };
+		D5037E062ACF7EA700675FC7 /* ActivateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5037E052ACF7EA700675FC7 /* ActivateTaskView.swift */; };
 		D569AA802ACCDBE4006961B9 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */; };
 		D569AA822ACCDC14006961B9 /* ChooseYourCompanionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */; };
 		D569AA862ACD9982006961B9 /* ChooseTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569AA852ACD9982006961B9 /* ChooseTaskView.swift */; };
@@ -44,8 +43,7 @@
 		0BBDD4592ACA33480000A250 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BBDD4602ACA65870000A250 /* OnGoingTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnGoingTaskView.swift; sourceTree = "<group>"; };
 		0BBDD4642ACBAC760000A250 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		D5037E052ACF7EA700675FC7 /* ActivateMusicTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateMusicTaskView.swift; sourceTree = "<group>"; };
-		D5037E072ACF8BEF00675FC7 /* ActivateMovieTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateMovieTaskView.swift; sourceTree = "<group>"; };
+		D5037E052ACF7EA700675FC7 /* ActivateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateTaskView.swift; sourceTree = "<group>"; };
 		D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseYourCompanionView.swift; sourceTree = "<group>"; };
 		D569AA852ACD9982006961B9 /* ChooseTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTaskView.swift; sourceTree = "<group>"; };
@@ -75,8 +73,7 @@
 				D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */,
 				0B93431F2AD37BFE003FF623 /* NameCompanionView.swift */,
 				D569AA852ACD9982006961B9 /* ChooseTaskView.swift */,
-				D5037E052ACF7EA700675FC7 /* ActivateMusicTaskView.swift */,
-				D5037E072ACF8BEF00675FC7 /* ActivateMovieTaskView.swift */,
+				D5037E052ACF7EA700675FC7 /* ActivateTaskView.swift */,
 				0B26062F2ACF943600E2B951 /* WelcomeVideoView.swift */,
 				0B93431D2AD36F48003FF623 /* HistoryView.swift */,
 				D57C735A2AD3BA9D000CB65A /* CustomColourView.swift */,
@@ -208,10 +205,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BBDD4612ACA65870000A250 /* OnGoingTaskView.swift in Sources */,
-				D5037E062ACF7EA700675FC7 /* ActivateMusicTaskView.swift in Sources */,
+				D5037E062ACF7EA700675FC7 /* ActivateTaskView.swift in Sources */,
 				D569AA862ACD9982006961B9 /* ChooseTaskView.swift in Sources */,
 				0B93431C2AD2B9B1003FF623 /* UnFinishedTaskView.swift in Sources */,
-				D5037E082ACF8BEF00675FC7 /* ActivateMovieTaskView.swift in Sources */,
 				0B2606302ACF943600E2B951 /* WelcomeVideoView.swift in Sources */,
 				0B26062C2ACF7E1300E2B951 /* FinishedTaskView.swift in Sources */,
 				0B93431E2AD36F48003FF623 /* HistoryView.swift in Sources */,

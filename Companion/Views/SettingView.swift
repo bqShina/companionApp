@@ -16,6 +16,7 @@ struct SettingView: View {
     
     func loadNameFromUserDefaults() {
             if let savedUserName = UserDefaults.standard.string(forKey: "name") {
+                print("name: \(savedUserName)")
                 savedName = savedUserName
             }
         }
@@ -28,21 +29,23 @@ struct SettingView: View {
                 .fontWeight(.bold)
                 .foregroundColor(contentColor)
             
-
-            ZStack {
-                Image("glow-title")
-                HStack(spacing: 80) {
-                    Image("small_dog")
-                    Text("\(savedName)")
-                        .font(.system(size: 18))
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(contentColor)
+            NavigationLink(destination: NameCompanionView()) {
+                ZStack {
+                    Image("glow-title")
+                    HStack(spacing: 80) {
+                        Image("small_dog")
+                        Text("\(savedName)")
+                            .font(.system(size: 18))
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(contentColor)
+                    }
+                    .frame(width: 343, height: 76)
+                    .background(Color(red: 0.52, green: 0.51, blue: 0.51).opacity(0.3))
+                    .cornerRadius(25)
                 }
-                .frame(width: 343, height: 76)
-                .background(Color(red: 0.52, green: 0.51, blue: 0.51).opacity(0.3))
-                .cornerRadius(25)
+                .frame(width: 387, height: 93)
             }
-            .frame(width: 387, height: 93)
+           
     
             
             
