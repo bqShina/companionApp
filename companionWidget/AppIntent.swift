@@ -11,8 +11,9 @@ import AppIntents
 struct ConfigurationAppIntent: WidgetConfigurationIntent {
     static var title: LocalizedStringResource = "Configuration"
     static var description = IntentDescription("This is an example widget.")
+//    static var tasks: [String] = ["Listen to some music 🎵", "Binge your favourite movie 🎬", "Sing and dance to a song 🎶", "Running for 1 hour 🏃"]
 
     // An example configurable parameter.
-    @Parameter(title: "Favorite Emoji", default: "😃")
+    @Parameter(title: "Companion", default: "Hey, let's pause a bit!")
     var favoriteEmoji: String
 }

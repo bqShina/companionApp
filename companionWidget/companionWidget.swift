@@ -41,11 +41,18 @@ struct companionWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
+        VStack(spacing:5) {
+//            Image("dog")
+//                .resizable()
+//                .frame(width:20, height: 20)
+            Text("Companion")
+                .font(.system(size: 22, weight: .bold))
+            Image("dog")
+                .resizable()
+                .frame(width:45, height: 40)
+//            Text(entry.date, style: .time)
 
-            Text("Favorite Emoji:")
+//            Text("Favorite Emoji:")
             Text(entry.configuration.favoriteEmoji)
         }
     }
@@ -65,13 +72,13 @@ struct companionWidget: Widget {
 extension ConfigurationAppIntent {
     fileprivate static var smiley: ConfigurationAppIntent {
         let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "😀"
+        intent.favoriteEmoji = "Hey, let's pause a bit!"
         return intent
     }
     
     fileprivate static var starEyes: ConfigurationAppIntent {
         let intent = ConfigurationAppIntent()
-        intent.favoriteEmoji = "🤩"
+        intent.favoriteEmoji = "Let's do something fun!"
         return intent
     }
 }
