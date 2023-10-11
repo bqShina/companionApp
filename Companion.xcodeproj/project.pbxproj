@@ -35,7 +35,39 @@
 		D5DB5F372AD4FF4500A0900F /* EventFormType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F362AD4FF4500A0900F /* EventFormType.swift */; };
 		D5DB5F392AD4FF7200A0900F /* EventFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F382AD4FF7200A0900F /* EventFormView.swift */; };
 		D5DB5F3B2AD4FFD600A0900F /* ListViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F3A2AD4FFD600A0900F /* ListViewRow.swift */; };
+		D5DB5F432AD61B6D00A0900F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DB5F422AD61B6D00A0900F /* WidgetKit.framework */; };
+		D5DB5F452AD61B6D00A0900F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5DB5F442AD61B6D00A0900F /* SwiftUI.framework */; };
+		D5DB5F482AD61B6D00A0900F /* companionWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F472AD61B6D00A0900F /* companionWidgetBundle.swift */; };
+		D5DB5F4A2AD61B6D00A0900F /* companionWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F492AD61B6D00A0900F /* companionWidgetLiveActivity.swift */; };
+		D5DB5F4C2AD61B6D00A0900F /* companionWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F4B2AD61B6D00A0900F /* companionWidget.swift */; };
+		D5DB5F4E2AD61B6D00A0900F /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB5F4D2AD61B6D00A0900F /* AppIntent.swift */; };
+		D5DB5F502AD61B6E00A0900F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DB5F4F2AD61B6E00A0900F /* Assets.xcassets */; };
+		D5DB5F542AD61B6E00A0900F /* companionWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D5DB5F402AD61B6D00A0900F /* companionWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5DB5F522AD61B6E00A0900F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BBDD4472ACA33470000A250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5DB5F3F2AD61B6D00A0900F;
+			remoteInfo = companionWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5DB5F582AD61B6E00A0900F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D5DB5F542AD61B6E00A0900F /* companionWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B2200DE2AD3853300FE7918 /* welcome.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = welcome.mov; path = Companion/welcome.mov; sourceTree = SOURCE_ROOT; };
@@ -66,6 +98,15 @@
 		D5DB5F362AD4FF4500A0900F /* EventFormType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFormType.swift; sourceTree = "<group>"; };
 		D5DB5F382AD4FF7200A0900F /* EventFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFormView.swift; sourceTree = "<group>"; };
 		D5DB5F3A2AD4FFD600A0900F /* ListViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewRow.swift; sourceTree = "<group>"; };
+		D5DB5F402AD61B6D00A0900F /* companionWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = companionWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5DB5F422AD61B6D00A0900F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D5DB5F442AD61B6D00A0900F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D5DB5F472AD61B6D00A0900F /* companionWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = companionWidgetBundle.swift; sourceTree = "<group>"; };
+		D5DB5F492AD61B6D00A0900F /* companionWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = companionWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		D5DB5F4B2AD61B6D00A0900F /* companionWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = companionWidget.swift; sourceTree = "<group>"; };
+		D5DB5F4D2AD61B6D00A0900F /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		D5DB5F4F2AD61B6E00A0900F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5DB5F512AD61B6E00A0900F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +116,15 @@
 			files = (
 				0B2200E32AD4FBF900FE7918 /* ConfettiSwiftUI in Frameworks */,
 				0B55522D2ACE58D100DCB7C2 /* ConfettiSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5DB5F3D2AD61B6D00A0900F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DB5F452AD61B6D00A0900F /* SwiftUI.framework in Frameworks */,
+				D5DB5F432AD61B6D00A0900F /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +166,8 @@
 			children = (
 				D57C735E2AD4CFE4000CB65A /* Info.plist */,
 				0BBDD4512ACA33470000A250 /* Companion */,
+				D5DB5F462AD61B6D00A0900F /* companionWidget */,
+				D5DB5F412AD61B6D00A0900F /* Frameworks */,
 				0BBDD4502ACA33470000A250 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				0BBDD44F2ACA33470000A250 /* companion.app */,
+				D5DB5F402AD61B6D00A0900F /* companionWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +224,28 @@
 			path = EditUpdateView;
 			sourceTree = "<group>";
 		};
+		D5DB5F412AD61B6D00A0900F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5DB5F422AD61B6D00A0900F /* WidgetKit.framework */,
+				D5DB5F442AD61B6D00A0900F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5DB5F462AD61B6D00A0900F /* companionWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D5DB5F472AD61B6D00A0900F /* companionWidgetBundle.swift */,
+				D5DB5F492AD61B6D00A0900F /* companionWidgetLiveActivity.swift */,
+				D5DB5F4B2AD61B6D00A0900F /* companionWidget.swift */,
+				D5DB5F4D2AD61B6D00A0900F /* AppIntent.swift */,
+				D5DB5F4F2AD61B6E00A0900F /* Assets.xcassets */,
+				D5DB5F512AD61B6E00A0900F /* Info.plist */,
+			);
+			path = companionWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,10 +256,12 @@
 				0BBDD44B2ACA33470000A250 /* Sources */,
 				0BBDD44C2ACA33470000A250 /* Frameworks */,
 				0BBDD44D2ACA33470000A250 /* Resources */,
+				D5DB5F582AD61B6E00A0900F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D5DB5F532AD61B6E00A0900F /* PBXTargetDependency */,
 			);
 			name = companion;
 			packageProductDependencies = (
@@ -194,6 +271,23 @@
 			productName = PraShina;
 			productReference = 0BBDD44F2ACA33470000A250 /* companion.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D5DB5F3F2AD61B6D00A0900F /* companionWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5DB5F552AD61B6E00A0900F /* Build configuration list for PBXNativeTarget "companionWidgetExtension" */;
+			buildPhases = (
+				D5DB5F3C2AD61B6D00A0900F /* Sources */,
+				D5DB5F3D2AD61B6D00A0900F /* Frameworks */,
+				D5DB5F3E2AD61B6D00A0900F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = companionWidgetExtension;
+			productName = companionWidgetExtension;
+			productReference = D5DB5F402AD61B6D00A0900F /* companionWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -206,6 +300,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					0BBDD44E2ACA33470000A250 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					D5DB5F3F2AD61B6D00A0900F = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -227,6 +324,7 @@
 			projectRoot = "";
 			targets = (
 				0BBDD44E2ACA33470000A250 /* companion */,
+				D5DB5F3F2AD61B6D00A0900F /* companionWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -239,6 +337,14 @@
 				0B2200DF2AD3853300FE7918 /* welcome.mov in Resources */,
 				0BBDD45A2ACA33480000A250 /* Preview Assets.xcassets in Resources */,
 				0BBDD4572ACA33480000A250 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5DB5F3E2AD61B6D00A0900F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DB5F502AD61B6E00A0900F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +381,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5DB5F3C2AD61B6D00A0900F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5DB5F482AD61B6D00A0900F /* companionWidgetBundle.swift in Sources */,
+				D5DB5F4E2AD61B6D00A0900F /* AppIntent.swift in Sources */,
+				D5DB5F4A2AD61B6D00A0900F /* companionWidgetLiveActivity.swift in Sources */,
+				D5DB5F4C2AD61B6D00A0900F /* companionWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5DB5F532AD61B6E00A0900F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5DB5F3F2AD61B6D00A0900F /* companionWidgetExtension */;
+			targetProxy = D5DB5F522AD61B6E00A0900F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0BBDD45B2ACA33480000A250 /* Debug */ = {
@@ -400,12 +525,13 @@
 		0BBDD45E2ACA33480000A250 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Companion/Preview Content\"";
-				DEVELOPMENT_TEAM = Y56U5X7F52;
+				DEVELOPMENT_TEAM = 4K59ZSDBQ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = companion/Info.plist;
@@ -419,7 +545,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.shina.PraShina;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Anne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -430,12 +556,13 @@
 		0BBDD45F2ACA33480000A250 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Companion/Preview Content\"";
-				DEVELOPMENT_TEAM = Y56U5X7F52;
+				DEVELOPMENT_TEAM = 4K59ZSDBQ4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = companion/Info.plist;
@@ -449,8 +576,62 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.shina.PraShina;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Anne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5DB5F562AD61B6E00A0900F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4K59ZSDBQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = companionWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = companionWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Anne.companionWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5DB5F572AD61B6E00A0900F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4K59ZSDBQ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = companionWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = companionWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Anne.companionWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -474,6 +655,15 @@
 			buildConfigurations = (
 				0BBDD45E2ACA33480000A250 /* Debug */,
 				0BBDD45F2ACA33480000A250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5DB5F552AD61B6E00A0900F /* Build configuration list for PBXNativeTarget "companionWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5DB5F562AD61B6E00A0900F /* Debug */,
+				D5DB5F572AD61B6E00A0900F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
