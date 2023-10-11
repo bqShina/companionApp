@@ -81,6 +81,12 @@ extension ConfigurationAppIntent {
         intent.favoriteEmoji = "Let's do something fun!"
         return intent
     }
+    
+    fileprivate static var excited: ConfigurationAppIntent {
+        let intent = ConfigurationAppIntent()
+        intent.favoriteEmoji = "Let's take a short break!"
+        return intent
+    }
 }
 
 #Preview(as: .systemSmall) {
@@ -88,4 +94,5 @@ extension ConfigurationAppIntent {
 } timeline: {
     SimpleEntry(date: .now, configuration: .smiley)
     SimpleEntry(date: .now, configuration: .starEyes)
+    SimpleEntry(date: .now, configuration: .excited)
 }
