@@ -25,7 +25,7 @@ struct FinishTaskView: View {
                .confettiCannon(counter: $counter, openingAngle: Angle(degrees: 0), closingAngle: Angle(degrees: 360), radius: 200, repetitions: 3, repetitionInterval: 0.7)
             
             
-            VStack (spacing: 30) {
+            VStack (spacing: 30) { 
                 Image(systemName: "trophy")
                     .font(.system(size: 24))
                     .foregroundColor(Color(red: 0.89, green: 0.65, blue: 0.04))
@@ -46,7 +46,7 @@ struct FinishTaskView: View {
                 
             }
             .padding(.all)
-            .frame(width: 331, height: 201)
+            .frame(width: 331)
             .background(Color(red: 0.52, green: 0.51, blue: 0.51).opacity(0.4))
             .cornerRadius(25)
             .padding()

@@ -10,6 +10,8 @@ import SwiftUI
 struct OnGoingTaskView: View {
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    @StateObject var viewModel: EventFormViewModel = EventFormViewModel()
+    @EnvironmentObject var eventStore: EventStore
     let task: String
 
     var body: some View {
@@ -48,17 +50,47 @@ struct OnGoingTaskView: View {
                     
                     HStack(spacing: 60){
                         
-                        NavigationLink(destination: UnFinishedTaskView()) {
-                            Image(systemName: "multiply.circle")
-                                .font(.system(size: 35))
-                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                        }.offset(y:35)
+                            NavigationLink(destination: UnFinishedTaskView()) {
+                                Image(systemName: "multiply.circle")
+                                    .font(.system(size: 35))
+                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            }.offset(y:35)
+            
+                        .simultaneousGesture(TapGesture().onEnded {
+                            let newEvent = Event(eventType: .unfinished,
+                                                 date: viewModel.date,
+                                                 note: task)
+                            if eventStore.events.count > 4 {
+                                // update this event
+                                eventStore.update(newEvent)
+                            } else {
+                                // create new event
+                                
+                                eventStore.add(newEvent)
+                            }
+                        })
                         
-                        NavigationLink(destination: FinishTaskView()) {
-                            Image(systemName: "checkmark.circle")
-                                .font(.system(size: 35))
-                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                        }.offset(y:35)
+                     
+                            NavigationLink(destination: FinishTaskView()) {
+                                Image(systemName: "checkmark.circle")
+                                    .font(.system(size: 35))
+                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            }
+                            .offset(y: 35)
+                      
+                        .simultaneousGesture(TapGesture().onEnded {
+                            let newEvent = Event(eventType: .finished,
+                                                 date: viewModel.date,
+                                                 note: task)
+                            if eventStore.events.count > 4 {
+                                // update this event
+                                eventStore.update(newEvent)
+                            } else {
+                                // create new event
+                                
+                                eventStore.add(newEvent)
+                            }
+                        })
                     }
                     
                 }

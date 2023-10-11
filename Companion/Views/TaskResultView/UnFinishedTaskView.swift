@@ -11,7 +11,8 @@ import ConfettiSwiftUI
 struct UnFinishedTaskView: View {
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.presentationMode) private var presentationMode
-    
+    @State var selectedTab: Tabs = .history
+    @State private var tabSelection = 3
     @State private var counter = 0
     
     var body: some View {
@@ -36,9 +37,14 @@ struct UnFinishedTaskView: View {
                     .font(.system(size: 24))
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
+                NavigationLink(destination: TabViewCustom(selectedTab: $selectedTab, tabSelection: $tabSelection)) {
+                    Image(systemName: "calendar")
+                        .font(.system(size: 25))
+                        .foregroundColor(contentColor)
+                }
             }
             .padding(.all)
-            .frame(width: 331, height: 201)
+            .frame(width: 331)
             .background(Color(red: 0.52, green: 0.51, blue: 0.51).opacity(0.4))
             .cornerRadius(25)
             .padding()
@@ -86,6 +92,7 @@ struct CustomNavigationBar: View {
                                Spacer()
                            }
                        })
+                       
                        
                    }
                 })
