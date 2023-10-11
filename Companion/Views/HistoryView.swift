@@ -87,7 +87,15 @@ struct CalendarView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
+        if let changedEvent = eventStore.changedEvent {
+            uiView.reloadDecorations(forDateComponents: [changedEvent.dateComponents], animated: true)
+            eventStore.changedEvent = nil
+        }
         
+        if let movedEvent = eventStore.movedEvent {
+            uiView.reloadDecorations(forDateComponents: [movedEvent.dateComponents], animated: true)
+            eventStore.movedEvent = nil
+        }
     }
         
     class Coordinator: NSObject, UICalendarViewDelegate, UICalendarSelectionSingleDateDelegate {
