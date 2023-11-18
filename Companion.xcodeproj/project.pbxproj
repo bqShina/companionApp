@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B051A572B088C3400EDD974 /* NameCompanionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B051A562B088C3400EDD974 /* NameCompanionModel.swift */; };
 		0B2200DF2AD3853300FE7918 /* welcome.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0B2200DE2AD3853300FE7918 /* welcome.mov */; };
 		0B2200E12AD4F17500FE7918 /* DynamicIslandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2200E02AD4F17500FE7918 /* DynamicIslandView.swift */; };
 		0B2200E32AD4FBF900FE7918 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0B2200E22AD4FBF900FE7918 /* ConfettiSwiftUI */; };
@@ -70,6 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B051A562B088C3400EDD974 /* NameCompanionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCompanionModel.swift; sourceTree = "<group>"; };
 		0B2200DE2AD3853300FE7918 /* welcome.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = welcome.mov; path = Companion/welcome.mov; sourceTree = SOURCE_ROOT; };
 		0B2200E02AD4F17500FE7918 /* DynamicIslandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandView.swift; sourceTree = "<group>"; };
 		0B26062B2ACF7E1300E2B951 /* FinishedTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedTaskView.swift; sourceTree = "<group>"; };
@@ -131,16 +133,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B051A522B07527600EDD974 /* NewUserPath */ = {
+			isa = PBXGroup;
+			children = (
+				0B051A552B0752E300EDD974 /* Resources */,
+				0B051A542B07529C00EDD974 /* Models */,
+				0B051A532B07529400EDD974 /* Views */,
+			);
+			path = NewUserPath;
+			sourceTree = "<group>";
+		};
+		0B051A532B07529400EDD974 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B93431F2AD37BFE003FF623 /* NameCompanionView.swift */,
+				D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0B051A542B07529C00EDD974 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B051A562B088C3400EDD974 /* NameCompanionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B051A552B0752E300EDD974 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B051A582B088CDA00EDD974 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0B051A5A2B088CF600EDD974 /* Models */,
+				0B051A592B088CEB00EDD974 /* Views */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		0B051A592B088CEB00EDD974 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0BBDD4642ACBAC760000A250 /* SettingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0B051A5A2B088CF600EDD974 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0B5552282ACE3A6600DCB7C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				0B93431A2AD2B974003FF623 /* TaskResultView */,
 				0BBDD4602ACA65870000A250 /* OnGoingTaskView.swift */,
 				0B26062D2ACF876E00E2B951 /* CustomTabView.swift */,
-				0BBDD4642ACBAC760000A250 /* SettingView.swift */,
 				D569AA7F2ACCDBE4006961B9 /* HomePageView.swift */,
-				D569AA812ACCDC14006961B9 /* ChooseYourCompanionView.swift */,
-				0B93431F2AD37BFE003FF623 /* NameCompanionView.swift */,
 				D569AA852ACD9982006961B9 /* ChooseTaskView.swift */,
 				D5037E052ACF7EA700675FC7 /* ActivateTaskView.swift */,
 				0B26062F2ACF943600E2B951 /* WelcomeVideoView.swift */,
@@ -184,6 +241,8 @@
 		0BBDD4512ACA33470000A250 /* Companion */ = {
 			isa = PBXGroup;
 			children = (
+				0B051A582B088CDA00EDD974 /* Setting */,
+				0B051A522B07527600EDD974 /* NewUserPath */,
 				D5DB5F332AD4FF1000A0900F /* EditUpdateView */,
 				D5DB5F232AD4E3C300A0900F /* Models */,
 				0B5552282ACE3A6600DCB7C2 /* Views */,
@@ -364,6 +423,7 @@
 				0B93431E2AD36F48003FF623 /* HistoryView.swift in Sources */,
 				0BBDD4652ACBAC760000A250 /* SettingView.swift in Sources */,
 				D5DB5F272AD4E45600A0900F /* Event.swift in Sources */,
+				0B051A572B088C3400EDD974 /* NameCompanionModel.swift in Sources */,
 				D5DB5F352AD4FF2500A0900F /* EventFormViewModel.swift in Sources */,
 				0BBDD4552ACA33470000A250 /* ContentView.swift in Sources */,
 				0BBDD4532ACA33470000A250 /* CompanionApp.swift in Sources */,
@@ -531,7 +591,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Companion/Preview Content\"";
-				DEVELOPMENT_TEAM = 4K59ZSDBQ4;
+				DEVELOPMENT_TEAM = U6V5MXK3VE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = companion/Info.plist;
@@ -545,7 +605,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.Anne;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Shina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -562,7 +622,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Companion/Preview Content\"";
-				DEVELOPMENT_TEAM = 4K59ZSDBQ4;
+				DEVELOPMENT_TEAM = U6V5MXK3VE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = companion/Info.plist;
@@ -576,7 +636,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.Anne;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Shina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -591,7 +651,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4K59ZSDBQ4;
+				DEVELOPMENT_TEAM = U6V5MXK3VE;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = companionWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = companionWidget;
@@ -602,7 +662,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.Anne.companionWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Shina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -618,7 +678,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4K59ZSDBQ4;
+				DEVELOPMENT_TEAM = U6V5MXK3VE;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = companionWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = companionWidget;
@@ -629,7 +689,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.Anne.companionWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = me.Shina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

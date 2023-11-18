@@ -19,12 +19,6 @@ struct NameCompanionView: View {
             UserDefaults.standard.set(name, forKey: "name")
         }
     
-//    func loadNameFromUserDefaults() {
-//            if let savedUserName = UserDefaults.standard.string(forKey: "name") {
-//                savedName = savedUserName
-//            }
-//        }
-    
     init() {
         self.isFocused = false
     }

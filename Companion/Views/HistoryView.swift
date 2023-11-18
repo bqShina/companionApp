@@ -23,7 +23,7 @@ struct HistoryView: View {
                 .fontWeight(.bold)
                 .foregroundColor(contentColor)
             
-            ZStack {
+            ZStack {  
                 Image("glow-title")
                 HStack(spacing: 80) {
                     Image("small_dog")
@@ -45,6 +45,7 @@ struct HistoryView: View {
                              displayEvents: $displayEvents)
     //                .padding(.horizontal)
             }
+            .padding(.horizontal)
             .sheet(isPresented: $displayEvents) {
                 DaysHistoryView(dateSelected: $dateSelected)
                     .presentationDetents([.medium, .large])

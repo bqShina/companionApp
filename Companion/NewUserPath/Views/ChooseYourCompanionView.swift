@@ -13,22 +13,22 @@ struct ChooseYourCompanionView: View {
     var body: some View {
         
         VStack{
-            HStack{
-                Button{
-                    
-                }
-                label: {
-                    Image(systemName: "arrowshape.turn.up.backward")
-                        .dynamicTypeSize(.xxxLarge)
-                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                        .offset(x:-10, y:20)
-                }
-                
-                Text("Choose Your Companion!")
-                    .font(.system(size:24, weight: .bold))
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
-                    .offset(y:20)
-            }
+//            HStack{
+//                Button{
+//                    
+//                }
+//                label: {
+//                    Image(systemName: "arrowshape.turn.up.backward")
+//                        .dynamicTypeSize(.xxxLarge)
+//                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+//                        .offset(x:-10, y:20)
+//                }
+//                
+//                Text("Choose Your Companion!")
+//                    .font(.system(size:24, weight: .bold))
+//                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+//                    .offset(y:20)
+//            }
             
             ScrollView(.vertical){
                 Button{

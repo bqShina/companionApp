@@ -39,23 +39,6 @@ struct ContentView: View {
                 
                 TabViewCustom(selectedTab: $selectedTab, tabSelection: $tabSelection)
                     
-                
-//                TabView(selection: $tabSelection) {
-//                    
-//                    HomePageView()
-//                        .tag(1)
-//                    ChooseTaskView()
-//                        .tag(2)
-//                    HistoryView()
-//                        .tag(3)
-//                    SettingView()
-//                        .tag(4)
-//                
-//  
-//                }
-//                .overlay(alignment: .bottom) {
-//                    CustomTabView(tabSelection: $tabSelection)
-//                }
 
             }
         }
