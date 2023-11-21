@@ -11,12 +11,13 @@ struct HomePageView: View {
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
-       
+        let contentColor: Color = colorScheme == .dark ? Color.white : Color.black
+
         VStack {
             HStack{
                 Text("Level 1")
                     .font(.system(size:30, weight: .bold))
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    .foregroundColor(contentColor)
                     .offset(y:20)
                 Image(systemName: "trophy")
                     .dynamicTypeSize(.xxxLarge)
@@ -25,14 +26,14 @@ struct HomePageView: View {
             }
             Text("Complete 3 tasks to level up!")
                 .dynamicTypeSize(.xLarge)
-                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                .foregroundColor(contentColor)
                 .offset(y:30)
                 
                 //            EVOLUTION BOX
             ZStack{
                 RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                     .frame(width:335, height:85)
-                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                    .foregroundColor(contentColor)
                     .opacity(0.2)
                     .offset(y:30)
                 HStack{
@@ -44,11 +45,11 @@ struct HomePageView: View {
                     VStack{
                         Text("Lv. 10")
                             .dynamicTypeSize(.xSmall)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .foregroundColor(contentColor)
                             .offset(y:30)
                         Image(systemName: "arrow.right")
                             .dynamicTypeSize(.xxLarge)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .foregroundColor(contentColor)
                             .offset(y:30)
                     }
                         
@@ -61,11 +62,11 @@ struct HomePageView: View {
                     VStack{
                         Text("Lv. 20")
                             .dynamicTypeSize(.xSmall)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .foregroundColor(contentColor)
                             .offset(y:30)
                          Image(systemName: "arrow.right")
                             .dynamicTypeSize(.xxLarge)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .foregroundColor(contentColor)
                             .offset(y:30)
                     }
                         

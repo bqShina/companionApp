@@ -37,11 +37,11 @@ struct CustomColourView: View {
                             ZStack{
                                 TopRoundedRectangle(cornerRadius: 20)
                                         .frame(width: 100, height: 50)
-                                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                        .foregroundColor(contentColor)
                                         .opacity(0.2)
                                 Image(systemName: "paintpalette")
                                     .dynamicTypeSize(.xxLarge)
-                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                    .foregroundColor(contentColor)
                             }
                             
                         }
@@ -57,7 +57,7 @@ struct CustomColourView: View {
                             ZStack{
                                 TopRoundedRectangle(cornerRadius: 20)
                                         .frame(width: 100, height: 50)
-                                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                        .foregroundColor(contentColor)
                                         .opacity(0.6)
                                 Image(systemName: "tshirt")
                                     .dynamicTypeSize(.xxLarge)
@@ -78,7 +78,7 @@ struct CustomColourView: View {
                             ZStack{
                                 TopRoundedRectangle(cornerRadius: 20)
                                         .frame(width: 100, height: 50)
-                                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                        .foregroundColor(contentColor)
                                         .opacity(0.6)
                                 Image(systemName: "paintpalette")
                                     .dynamicTypeSize(.xxLarge)
@@ -92,11 +92,11 @@ struct CustomColourView: View {
                             ZStack{
                                 TopRoundedRectangle(cornerRadius: 20)
                                         .frame(width: 100, height: 50)
-                                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                        .foregroundColor(contentColor)
                                         .opacity(0.2)
                                 Image(systemName: "tshirt")
                                     .dynamicTypeSize(.xxLarge)
-                                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                    .foregroundColor(contentColor)
                             }
                         }.offset(x:-8)
                     }
@@ -108,7 +108,7 @@ struct CustomColourView: View {
                 ZStack{
                     GeometryReader { geometry in
                         CustomRoundedRectangle(width: geometry.size.width)
-                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                            .foregroundColor(contentColor)
                             .opacity(0.2)
 
                     }.frame(height: 230)
@@ -125,7 +125,7 @@ struct CustomColourView: View {
                                 } label: {
                                     Image(systemName: "nosign")
                                         .font(.system(size: 30))
-                                        .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                        .foregroundColor(contentColor)
                                 }
                                 
                                 Button(){
@@ -244,7 +244,7 @@ struct CustomColourView: View {
                                     ZStack{
                                         Image(systemName: "nosign")
                                             .font(.system(size: 30))
-                                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
+                                            .foregroundColor(contentColor)
                                     }
                                 }
                                 Button(){
