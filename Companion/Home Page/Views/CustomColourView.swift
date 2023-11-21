@@ -144,13 +144,19 @@ struct CustomColourView: View {
                                         .foregroundColor(Color(hex: 0x00D324))
                                 }
                                 
+                                // Button(){
+                                    
+                                // } label: {
+                                //     Circle()
+                                //         .frame(width:50)
+                                //         .foregroundColor(Color(hex: 0x008965))
+                                // }
                                 Button(){
                                     
                                 } label: {
-                                    Circle()
-                                        .frame(width:50)
-                                        .foregroundColor(Color(hex: 0x008965))
+                                    
                                 }
+                                .buttonStyle(ColourButton(colourHex: 0x008965))
                             }
                             
                             HStack(spacing:40){
@@ -328,6 +334,31 @@ struct CustomColourView: View {
 
 #Preview {
     CustomColourView()
+}
+
+
+// Button(){
+                                    
+// } label: {
+//     Circle()
+//         .frame(width:50)
+//         .foregroundColor(Color(hex: 0xABA6AA))
+// }
+
+struct ColourButton: ButtonStyle {
+    var colourHex: Color
+
+     func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+        Circle()
+            .frame(width: 50)
+            // .padding()
+            .foregroundColor(Color(hex: colourHex))
+            // .background(LinearGradient(gradient: Gradient(colors: [startColor, endColor]), startPoint: .leading, endPoint: .trailing).opacity(configuration.isPressed ? 0.5 : 1))
+            // .cornerRadius(40)
+            // .padding(.horizontal, 20)
+            // .shadow(radius: 10)
+    }
 }
 
 
